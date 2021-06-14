@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         botaoCategorias = findViewById(R.id.btncat2);
-        botaoLanc = findViewById(R.id.btnLanc2);
+        botaoLanc = findViewById(R.id.btnlanc2);
 
         botaoCategorias.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
             
         });
         
-        botaoCategorias.setOnClickListener(new View.OnClickListener() {
+        botaoLanc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 
-                Intent cat = new Intent(getApplicationContext(), Lancamentos.class);
-                startActivity(cat);
+                Intent lanc = new Intent(getApplicationContext(), Lancamentos.class);
+                startActivity(lanc);
             }
         });
     }
