@@ -11,6 +11,8 @@ import android.widget.ImageButton;
 public class MainActivity extends AppCompatActivity {
 
     ImageButton botaoCategorias;
+    ImageButton botaoLanc;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,12 +20,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         botaoCategorias = findViewById(R.id.btncat2);
+        botaoLanc = findViewById(R.id.btnLanc2);
 
         botaoCategorias.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent cat = new Intent(getApplicationContext(), Categorias.class);
+                startActivity(cat);
+            }
+            
+            public void onClick(View v) {
+                
+                Intent cat = new Intent(getApplicationContext(), Lancamentos.class);
                 startActivity(cat);
             }
         });
