@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide(); // remove a action bar
         setContentView(R.layout.activity_main);
 
-        botaoCategorias = findViewById(R.id.btncat2);
-        botaoLanc = findViewById(R.id.btnlanc2);
+        botaoCategorias = findViewById(R.id.btncat1);
+        botaoLanc = findViewById(R.id.btnlanc1);
 
         botaoCategorias.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -6,4 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".Lancamentos">
 
+    <ImageButton
+        android:id="@+id/btnhome3"
+        android:layout_width="72dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="10dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/btncat3"
+        android:layout_width="72dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/list" />
+
+    <ImageButton
+        android:id="@+id/btnlanc3"
+        android:layout_width="72dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rocket" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,7 +7,7 @@
     tools:context=".Categorias">
 
     <ImageButton
-        android:id="@+id/btnhome"
+        android:id="@+id/btnhome2"
         android:layout_width="72dp"
         android:layout_height="69dp"
         android:layout_marginTop="10dp"
@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/home" />
 
     <ImageButton
-        android:id="@+id/btncat"
+        android:id="@+id/btncat2"
         android:layout_width="72dp"
         android:layout_height="69dp"
         android:layout_marginStart="20dp"
@@ -33,7 +33,7 @@
         app:srcCompat="@drawable/list" />
 
     <ImageButton
-        android:id="@+id/btnlanc"
+        android:id="@+id/btnlanc2"
         android:layout_width="72dp"
         android:layout_height="69dp"
         android:layout_marginTop="10dp"
@@ -45,15 +45,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/rocket" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="415dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="8dp"
-        android:background="@color/white"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        android:visibility="invisible"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-2dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
