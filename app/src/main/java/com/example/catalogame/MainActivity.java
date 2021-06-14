@@ -30,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(cat);
             }
             
+        });
+        
+        botaoCategorias.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
                 
                 Intent cat = new Intent(getApplicationContext(), Lancamentos.class);
