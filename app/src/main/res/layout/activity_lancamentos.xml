@@ -4,23 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#00FFFFFF"
     tools:context=".Lancamentos">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
         android:layout_width="412dp"
-        android:layout_height="100dp"
-        android:background="#FF5502"
-        android:orientation="horizontal"
+        android:layout_height="110dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtcalogamel"
+        android:id="@+id/txttitulol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
@@ -34,23 +34,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/btncat3"
-        android:layout_width="55dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
-        android:layout_weight="1"
-        android:background="#00FFFFFF"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/listamarc" />
-
-    <ImageButton
         android:id="@+id/btnhome3"
-        android:layout_width="55dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
         android:layout_marginTop="50dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
@@ -60,9 +46,22 @@
         app:srcCompat="@drawable/homemarc" />
 
     <ImageButton
+        android:id="@+id/btncat3"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/listamarc" />
+
+    <ImageButton
         android:id="@+id/btnlanc3"
-        android:layout_width="55dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"

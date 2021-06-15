@@ -7,25 +7,23 @@
     android:background="#FFFFFFFF"
     tools:context=".Categorias">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
         android:layout_width="412dp"
-        android:layout_height="100dp"
-        android:background="#FF5502"
-        android:orientation="horizontal"
+        android:layout_height="110dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
-
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtcatalogamec"
+        android:id="@+id/txttituloc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
-        android:layout_weight="1"
         android:fontFamily="@font/aldrich"
         android:text="@string/titPrincipal"
         android:textColor="#FFFFFF"
@@ -37,8 +35,8 @@
 
     <ImageButton
         android:id="@+id/btncat2"
-        android:layout_width="55dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
@@ -50,10 +48,9 @@
 
     <ImageButton
         android:id="@+id/btnhome2"
-        android:layout_width="55dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
         android:layout_marginTop="50dp"
-        android:layout_weight="1"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,8 +60,8 @@
 
     <ImageButton
         android:id="@+id/btnlanc2"
-        android:layout_width="55dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
