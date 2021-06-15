@@ -31,4 +31,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/list" />
 
+    <ImageButton
+        android:id="@+id/btnlanc3"
+        android:layout_width="72dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rocketmarc" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
