@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CataloGame</string>
+    <string name="titPrincipal">CATALOGAME</string>
+    <string name="titLanc">LANÇAMENTOS</string>
+    <string name="titCat">CATEGORIAS</string>
+    <string name="titDesta">DESTAQUES</string>
 </resources>
