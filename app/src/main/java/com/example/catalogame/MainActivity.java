@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     ImageButton botaoCategorias;
     ImageButton botaoLanc;
+    ImageButton botaoMine;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         botaoCategorias = findViewById(R.id.btncat1);
         botaoLanc = findViewById(R.id.btnlanc1);
+        botaoMine = findViewById(R.id.btnmine1);
 
         botaoCategorias.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +39,15 @@ public class MainActivity extends AppCompatActivity {
                 
                 Intent lanc = new Intent(getApplicationContext(), Lancamentos.class);
                 startActivity(lanc);
+            }
+        });
+        
+        botaoMine.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                
+                Intent mine = new Intent(getApplicationContext(), Minecraft.class);
+                startActivity(mine);
             }
         });
     }
