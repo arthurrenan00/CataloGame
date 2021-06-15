@@ -6,6 +6,9 @@ import android.os.Bundle;
 
 public class Categorias extends AppCompatActivity {
 
+    ImageButton botaoHome;
+    ImageButton botaoLanca;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
