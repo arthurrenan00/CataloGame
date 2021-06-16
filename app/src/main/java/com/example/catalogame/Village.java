@@ -7,21 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class Lancamentos extends AppCompatActivity {
+public class Village extends AppCompatActivity {
 
     ImageButton botaoCate;
     ImageButton botaoHom;
-    ImageButton botaoRevil;
-    
+    ImageButton botaoLanc;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_lancamentos);
-        
-        botaoCate = findViewById(R.id.btncat3);
-        botaoHom = findViewById(R.id.btnhome3);
-        botaoRevil = findViewById(R.id.btnrevil);
+        setContentView(R.layout.activity_village);
+
+        botaoCate = findViewById(R.id.btncatvil);
+        botaoHom = findViewById(R.id.btnhomevil);
+        botaoLanc = findViewById(R.id.btnlancvil);
 
         botaoCate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,9 +30,9 @@ public class Lancamentos extends AppCompatActivity {
                 Intent cate = new Intent(getApplicationContext(), Categorias.class);
                 startActivity(cate);
             }
-            
+
         });
-        
+
         botaoHom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,16 +40,17 @@ public class Lancamentos extends AppCompatActivity {
                 Intent ho = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(ho);
             }
-            
+
         });
 
-        botaoRevil.setOnClickListener(new View.OnClickListener(){
+        botaoLanc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent revil = new Intent(getApplicationContext(), Village.class);
-                startActivity(revil);
+                Intent lanc = new Intent(getApplicationContext(), Lancamentos.class);
+                startActivity(lanc);
             }
+
         });
     }
 }

@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".Lancamentos">
+    tools:context=".Village">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar3"
+        android:id="@+id/toolbarvil"
         android:layout_width="412dp"
         android:layout_height="110dp"
         android:background="?attr/colorPrimary"
@@ -20,21 +20,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txttitulol"
+        android:id="@+id/txthomevil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="90dp"
         android:fontFamily="@font/aldrich"
-        android:text="@string/titPrincipal"
+        android:text="HOME"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/btnhome3"
+        android:id="@+id/btnhomevil"
         android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginTop="50dp"
@@ -45,8 +45,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/homemarc" />
 
+    <TextView
+        android:id="@+id/txtlancvil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:fontFamily="@font/aldrich"
+        android:text="LANÇAMENTOS"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
-        android:id="@+id/btncat3"
+        android:id="@+id/btncatvil"
         android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginStart="50dp"
@@ -59,7 +74,7 @@
         app:srcCompat="@drawable/listamarc" />
 
     <ImageButton
-        android:id="@+id/btnlanc3"
+        android:id="@+id/btnlancvil"
         android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginTop="50dp"
@@ -69,10 +84,24 @@
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/rocketselect" />
+        app:srcCompat="@drawable/rocketmarc" />
 
     <TextView
-        android:id="@+id/txtcatl"
+        android:id="@+id/txttitulovil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/titPrincipal"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtcatvil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -87,74 +116,52 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtlancl"
+        android:id="@+id/txtidvil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/aldrich"
-        android:text="LANÇAMENTOS"
-        android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txthomel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
-        android:fontFamily="@font/aldrich"
-        android:text="HOME"
-        android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txtidl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:fontFamily="@font/aldrich"
-        android:text="LANÇAMENTOS"
+        android:text="RESIDENT EVIL VILLAGE"
         android:textColor="@color/purple_200"
-        android:textSize="25sp"
+        android:textSize="23sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbarvil" />
 
-    <ImageButton
-        android:id="@+id/btnrevil"
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginLeft="17dp"
-        android:layout_marginTop="15dp"
-        android:background="#00FFFFFF"
-        android:scaleType="fitCenter"
+    <ImageView
+        android:id="@+id/imgvil"
+        android:layout_width="150dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtidl"
+        app:layout_constraintTop_toBottomOf="@+id/txtidvil"
         app:srcCompat="@drawable/re8" />
 
-    <TextView
-        android:id="@+id/txtrevil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/aldrich"
-        android:text="Resident Evil Village"
-        android:textColor="@color/purple_200"
-        android:textSize="12sp"
-        android:textStyle="bold"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="90dp"
+        android:background="@color/purple_200"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnrevil" />
+        app:layout_constraintTop_toBottomOf="@+id/imgvil" />
+
+    <TextView
+        android:id="@+id/txtreviewvil"
+        android:layout_width="330dp"
+        android:layout_height="180dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Ethan Winter, sua esposa Mia e sua filha Rose tentando reconstruir suas vidas após os pesadelos do passado. A chegada de Chris Redfield, porém, desfaz os planos da família e leva Ethan a uma caótica caçada em busca de respostas em um vilarejo sombrio.  Somados o enredo, a visão em primeira pessoa, os gráficos de altíssima qualidade e a trilha sonora, Village consegue compor uma verdadeira atmosfera de terror e mistério capaz de assustar até os jogadores mais experientes e acostumados com a franquia.  Mas, a aventura não se resume apenas a sustos. O jogo também entrega uma boa dose de ação, em lutas macabras contra inimigos horripilantes, e demanda do usuário muita estratégia e agilidade, tanto para solucionar uma série de puzzles ao longo da jornada quanto para usar da melhor forma os seus recursos, afinal, a essência de toda franquia é a sobrevivência.  "
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
