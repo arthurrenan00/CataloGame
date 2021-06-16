@@ -3,6 +3,7 @@ package com.example.catalogame;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -56,20 +57,8 @@ public class MainActivity extends AppCompatActivity {
     {
 	Uri uri = Uri.parse("https://store.steampowered.com/?l=portuguese");
 	Intent it = new Intent(Intent.ACTION_VIEW,uri);
-	startActivity(Intent.createChooser(R.string.chNav));
+	startActivity(Intent.createChooser(it, getString(R.string.chNav)));
     }
     
-    public void abrirXbox(View view)
-    {
-	Uri uri = Uri.parse("https://www.xbox.com/pt-BR/games/all-games");
-	Intent it = new Intent(Intent.ACTION_VIEW,uri);
-	startActivity(Intent.createChooser(R.string.chNav));
-    }
-    
-    public void abrirPsStore(View view)
-    {
-	Uri uri = Uri.parse("https://store.playstation.com/pt-br/latest");
-	Intent it = new Intent(Intent.ACTION_VIEW,uri);
-	startActivity(Intent.createChooser(R.string.chNav));
-    }
+
 }
