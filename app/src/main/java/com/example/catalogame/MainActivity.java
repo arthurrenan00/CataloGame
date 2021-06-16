@@ -51,4 +51,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    
+    public void abrirSteam(View view)
+    {
+	Uri uri = Uri.parse("https://store.steampowered.com/?l=portuguese");
+	Intent it = new Intent(Intent.ACTION_VIEW,uri);
+	startActivity(Intent.createChooser(R.string.chNav));
+    }
+    
+    public void abrirXbox(View view)
+    {
+	Uri uri = Uri.parse("https://www.xbox.com/pt-BR/games/all-games");
+	Intent it = new Intent(Intent.ACTION_VIEW,uri);
+	startActivity(Intent.createChooser(R.string.chNav));
+    }
+    
+    public void abrirPsStore(View view)
+    {
+	Uri uri = Uri.parse("https://store.playstation.com/pt-br/latest");
+	Intent it = new Intent(Intent.ACTION_VIEW,uri);
+	startActivity(Intent.createChooser(R.string.chNav));
+    }
 }
