@@ -151,17 +151,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgvil" />
 
-    <TextView
-        android:id="@+id/txtreviewvil"
-        android:layout_width="330dp"
-        android:layout_height="180dp"
-        android:fontFamily="@font/aldrich"
-        android:text="Ethan Winter, sua esposa Mia e sua filha Rose tentando reconstruir suas vidas após os pesadelos do passado. A chegada de Chris Redfield, porém, desfaz os planos da família e leva Ethan a uma caótica caçada em busca de respostas em um vilarejo sombrio.  Somados o enredo, a visão em primeira pessoa, os gráficos de altíssima qualidade e a trilha sonora, Village consegue compor uma verdadeira atmosfera de terror e mistério capaz de assustar até os jogadores mais experientes e acostumados com a franquia.  Mas, a aventura não se resume apenas a sustos. O jogo também entrega uma boa dose de ação, em lutas macabras contra inimigos horripilantes, e demanda do usuário muita estratégia e agilidade, tanto para solucionar uma série de puzzles ao longo da jornada quanto para usar da melhor forma os seus recursos, afinal, a essência de toda franquia é a sobrevivência.  "
-        android:textColor="#FFFFFF"
-        android:textSize="11sp"
+    <WebView
+        android:id="@+id/webviewRm1"
+        android:layout_width="340dp"
+        android:layout_height="190dp"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
         app:layout_constraintTop_toTopOf="@+id/toolbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
