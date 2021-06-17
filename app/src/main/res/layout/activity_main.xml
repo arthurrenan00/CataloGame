@@ -144,10 +144,11 @@
 
     <ImageButton
         android:id="@+id/btnsteam"
-        android:layout_width="378dp"
-        android:layout_height="290dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
         android:background="#00FFFFFF"
         android:onClick="abrirSteam"
         android:scaleType="fitCenter"
