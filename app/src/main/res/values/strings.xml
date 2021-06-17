@@ -6,6 +6,8 @@
     <string name="titCat">CATEGORIAS</string>
     <string name="titDesta">DESTAQUES</string>
     <string name="chNav">ESCOLHA</string>
+    <string name="bf2042">Battlefield 2042</string>
+    <string name="BF2042">BATTLEFIELD 2042</string>
     <string name="resep1">Resident Evil</string>
     <string name="resep2">Village</string>
     <string name="revil">Resident Evil Village</string>
@@ -14,11 +16,13 @@
     <string name="minecraft">MINECRAFT</string>
     <string name="reviewMine">Minecraft é um jogo sandbox que da aos jogadores todas as ferramentas que eles precisam para explorar um vasto mundo, coletar recursos e criar quase tudo que se pode imaginar. A história de Minecraft é o que o jogador quer que ela seja, como os jogadores customizam seus mundos e as criaturas neles e como eles decidem interagir</string>
     <string name="reviewvil">Ethan Winter, sua esposa Mia e sua filha Rose tentando reconstruir suas vidas após os pesadelos do passado. A chegada de Chris Redfield, porém, desfaz os planos da família e leva Ethan a uma caótica caçada em busca de respostas em um vilarejo sombrio.  Somados o enredo, a visão em primeira pessoa, os gráficos de altíssima qualidade e a trilha sonora, Village consegue compor uma verdadeira atmosfera de terror e mistério</string>
+    <string name="reviewbf2042">Battlefield™ 2042 é um jogo de tiro em primeira pessoa que marca o retorno à emblemática guerra total da franquia. Em um mundo num futuro próximo, transformado pela desordem, adapte-se a campos de batalha dinâmicos para superá-los com a ajuda do seu pelotão e de um arsenal de ponta.</string>
     <string name="descCat">Botão de categorias</string>
     <string name="descHome">Botão de Home</string>
     <string name="descLanc">Botão de Lançamentos</string>
     <string name="descMine">Botão do Minecraft</string>
     <string name="descRe">Botão do Resident Evil Village</string>
+    <string name="descbf2042">Botão do Battlefield 2042</string>
     <string name="descSteam">Botão da biblioteca da Steam</string>
     <string name="descPs">Botão da biblioteca do Play Station</string>
     <string name="descXbox">Botão da biblioteca do Xbox</string>

@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".Minecraft">
+    tools:context=".Bf2042">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarmine"
+        android:id="@+id/toolbarbf2042"
         android:layout_width="412dp"
         android:layout_height="110dp"
         android:background="?attr/colorPrimary"
@@ -20,21 +19,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txttitulomine"
+        android:id="@+id/txthomebf2042"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="90dp"
         android:fontFamily="@font/aldrich"
-        android:text="@string/titPrincipal"
+        android:text="@string/tithome"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/btnhomemine"
+        android:id="@+id/btnhomebf2042"
         android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginTop="50dp"
@@ -46,51 +45,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/homemarc" />
 
-    <ImageButton
-        android:id="@+id/btncatmine"
-        android:layout_width="45dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/descCat"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/listamarc" />
-
-    <ImageButton
-        android:id="@+id/btnlancmine"
-        android:layout_width="45dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/descLanc"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/rocketmarc" />
-
     <TextView
-        android:id="@+id/txtcatmine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
-        android:layout_marginTop="90dp"
-        android:fontFamily="@font/aldrich"
-        android:text="@string/titCat"
-        android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txtlancmine"
+        android:id="@+id/txtlancbf2042"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="90dp"
@@ -104,115 +60,169 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageButton
+        android:id="@+id/btncatbf2042"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/descCat"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/listamarc" />
+
+    <ImageButton
+        android:id="@+id/btnlancbf2041"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/descLanc"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rocketmarc" />
+
     <TextView
-        android:id="@+id/txthomemine"
+        android:id="@+id/txttitulobf2042"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="7dp"
         android:fontFamily="@font/aldrich"
-        android:text="@string/tithome"
+        android:text="@string/titPrincipal"
         android:textColor="#FFFFFF"
-        android:textSize="12sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/txtcatbf2042"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/titCat"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ScrollView
         android:layout_width="412dp"
-        android:layout_height="620dp"
+        android:layout_height="619dp"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarmine">
+        app:layout_constraintTop_toBottomOf="@+id/toolbarbf2042">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="412dp"
             android:layout_height="620dp">
 
-            <ImageView
-                android:id="@+id/imgmine"
-                android:layout_width="150dp"
-                android:layout_height="225dp"
-                android:layout_marginTop="15dp"
-                android:contentDescription="@string/descMine"
-                android:scaleType="centerCrop"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtidmine"
-                app:srcCompat="@drawable/minecraft" />
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar4"
-                android:layout_width="350dp"
-                android:layout_height="180dp"
-                android:layout_marginTop="90dp"
-                android:background="?attr/colorPrimary"
-                android:minHeight="?attr/actionBarSize"
-                android:theme="?attr/actionBarTheme"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imgmine" />
-
-            <WebView
-                android:id="@+id/webviewRm"
-                android:layout_width="340dp"
-                android:layout_height="170dp"
-                android:background="@color/purple_200"
-                app:layout_constraintBottom_toBottomOf="@+id/toolbar4"
-                app:layout_constraintEnd_toEndOf="@+id/toolbar4"
-                app:layout_constraintStart_toStartOf="@+id/toolbar4"
-                app:layout_constraintTop_toTopOf="@+id/toolbar4">
-
-            </WebView>
-
-            <TextView
-                android:id="@+id/txtidmine"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:fontFamily="@font/aldrich"
-                android:text="@string/minecraft"
-                android:textColor="@color/purple_200"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
             <ImageButton
-                android:id="@+id/btnpsmine"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="100dp"
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="10dp"
-                android:background="#00FFFFFF"
-                android:contentDescription="@string/descPs"
-                android:scaleType="fitCenter"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toolbar4"
-                app:srcCompat="@drawable/psnlogo" />
-
-            <ImageButton
-                android:id="@+id/btnxboxmine"
+                android:id="@+id/btnxboxbf2042"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginEnd="100dp"
-                android:layout_marginRight="100dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
                 android:layout_marginBottom="10dp"
                 android:background="#00FFFFFF"
                 android:contentDescription="@string/descXbox"
                 android:scaleType="fitCenter"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toolbar4"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar5"
                 app:srcCompat="@drawable/xbox_4" />
 
+            <ImageButton
+                android:id="@+id/btnpsbf2042"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/descPs"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar5"
+                app:srcCompat="@drawable/psnlogo" />
+
+            <ImageButton
+                android:id="@+id/btnsteambf2042"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/descSteam"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar5"
+                app:srcCompat="@drawable/steamlogo" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar5"
+                android:layout_width="350dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="90dp"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+            <WebView
+                android:id="@+id/webviewRm2"
+                android:layout_width="340dp"
+                android:layout_height="160dp"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbar5"
+                app:layout_constraintEnd_toEndOf="@+id/toolbar5"
+                app:layout_constraintStart_toStartOf="@+id/toolbar5"
+                app:layout_constraintTop_toTopOf="@+id/toolbar5" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="150dp"
+                android:layout_height="225dp"
+                android:layout_marginTop="15dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/descbf2042"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:srcCompat="@drawable/bf2042" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/BF2042"
+                android:textColor="@color/purple_200"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -123,12 +123,13 @@
         android:layout_height="620dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar1"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -150,7 +151,7 @@
                 android:id="@+id/btnxbox"
                 android:layout_width="110dp"
                 android:layout_height="65dp"
-                android:layout_marginTop="320dp"
+                android:layout_marginTop="350dp"
                 android:layout_marginBottom="20dp"
                 android:background="#00FFFFFF"
                 android:contentDescription="@string/descXbox"
@@ -225,7 +226,7 @@
                 android:layout_marginTop="15dp"
                 android:background="#00FFFFFF"
                 android:contentDescription="@string/descRe"
-                android:scaleType="fitCenter"
+                android:scaleType="centerCrop"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtidh"
@@ -240,10 +241,39 @@
                 android:layout_marginTop="15dp"
                 android:background="#00FFFFFF"
                 android:contentDescription="@string/descMine"
-                android:scaleType="fitCenter"
+                android:scaleType="centerCrop"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtidh"
                 app:srcCompat="@drawable/minecraft" />
+
+            <ImageButton
+                android:id="@+id/btnbf1"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/descbf2042"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtidh"
+                app:srcCompat="@drawable/bf2042" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/aldrich"
+                android:text="@string/bf2042"
+                android:textColor="@color/purple_200"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnbf1" />
 
             <TextView
                 android:id="@+id/txtidh"
@@ -258,6 +288,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
