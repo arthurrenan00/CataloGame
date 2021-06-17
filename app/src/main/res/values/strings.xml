@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">CataloGame</string>
     <string name="titPrincipal">CATALOGAME</string>
+    <string name="tithome">HOME</string>
     <string name="titLanc">LANÇAMENTOS</string>
     <string name="titCat">CATEGORIAS</string>
     <string name="titDesta">DESTAQUES</string>
@@ -12,4 +13,5 @@
     <string name="descLanc">Botão de Lançamentos</string>
     <string name="descMine">Botão do Minecraft</string>
     <string name="descRe">Botão do Resident Evil Village</string>
+    <string name="descSteam">Botão da biblioteca da Steam</string>
 </resources>
