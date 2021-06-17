@@ -118,19 +118,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/btnmine1"
-        android:layout_width="151dp"
-        android:layout_height="237dp"
-        android:layout_marginTop="50dp"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/descMine"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar1"
-        app:srcCompat="@drawable/minecraft" />
-
     <TextView
         android:id="@+id/txtidh"
         android:layout_width="wrap_content"
@@ -148,8 +135,8 @@
 
     <ImageButton
         android:id="@+id/btnsteam"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginBottom="20dp"
@@ -159,5 +146,102 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/steamloja" />
+
+    <ImageButton
+        android:id="@+id/btnmine1"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/descMine"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtidh"
+        app:srcCompat="@drawable/minecraft" />
+
+    <ImageButton
+        android:id="@+id/btnxbox"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="20dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/descXbox"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/lojaxbox" />
+
+    <ImageButton
+        android:id="@+id/btnps"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/descPs"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/psstore" />
+
+    <ImageButton
+        android:id="@+id/btnrevil1"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/descRe"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtidh"
+        app:srcCompat="@drawable/re8" />
+
+    <TextView
+        android:id="@+id/txtdestmine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/mine"
+        android:textColor="@color/purple_200"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnmine1" />
+
+    <TextView
+        android:id="@+id/txtdestrevil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/resep1"
+        android:textColor="@color/purple_200"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnrevil1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/resep2"
+        android:textColor="@color/purple_200"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnrevil1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,7 +31,7 @@
         <activity android:name=".Minecraft" />
         <activity android:name=".Lancamentos" />
         <activity android:name=".Categorias" />
-        <activity android:name=".Village"></activity>
+        <activity android:name=".Village" />
 
     </application>
 

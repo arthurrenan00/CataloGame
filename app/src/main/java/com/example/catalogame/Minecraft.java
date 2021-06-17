@@ -3,6 +3,7 @@ package com.example.catalogame;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
@@ -13,6 +14,8 @@ public class Minecraft extends AppCompatActivity {
     ImageButton botaoCate;
     ImageButton botaoHom;
     ImageButton botaoLanc;
+    ImageButton botaoPsmine;
+    ImageButton botaoXboxmine;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,8 @@ public class Minecraft extends AppCompatActivity {
         botaoCate = findViewById(R.id.btncatmine);
         botaoHom = findViewById(R.id.btnhomemine);
         botaoLanc = findViewById(R.id.btnlancmine);
+        botaoPsmine = findViewById(R.id.btnpsmine);
+        botaoXboxmine = findViewById(R.id.btnxboxmine);
 
         WebView mWebView = (WebView) findViewById(R.id.webviewRm);
 
@@ -62,6 +67,26 @@ public class Minecraft extends AppCompatActivity {
                 startActivity(lanc);
             }
 
+        });
+
+        botaoPsmine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://store.playstation.com/pt-br/product/UP4433-CUSA00744_00-MINECRAFTPS40001");
+                Intent it = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(Intent.createChooser(it, getString(R.string.chNav)));
+
+            }
+        });
+
+        botaoXboxmine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://www.xbox.com/pt-BR/games/minecraft");
+                Intent it = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(Intent.createChooser(it, getString(R.string.chNav)));
+
+            }
         });
     }
 }

@@ -14,7 +14,10 @@ public class MainActivity extends AppCompatActivity {
     ImageButton botaoCategorias;
     ImageButton botaoLanc;
     ImageButton botaoMine;
+    ImageButton botaoRevil;
     ImageButton botaoSteam;
+    ImageButton botaoXbox;
+    ImageButton botaoPs;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +28,10 @@ public class MainActivity extends AppCompatActivity {
         botaoCategorias = findViewById(R.id.btncat1);
         botaoLanc = findViewById(R.id.btnlanc1);
         botaoMine = findViewById(R.id.btnmine1);
+        botaoRevil = findViewById(R.id.btnrevil1);
         botaoSteam = findViewById(R.id.btnsteam);
+        botaoXbox = findViewById(R.id.btnxbox);
+        botaoPs = findViewById(R.id.btnps);
 
         botaoCategorias.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,11 +61,40 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        botaoRevil.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+
+                Intent revil = new Intent(getApplicationContext(), Village.class);
+                startActivity(revil);
+            }
+        });
+
         botaoSteam.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Uri uri = Uri.parse("https://store.steampowered.com/?l=portuguese");
                 Intent it = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(Intent.createChooser(it, getString(R.string.chNav)));
+
+            }
+        });
+
+        botaoXbox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://www.xbox.com/pt-BR/games/all-games");
+                Intent it = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(Intent.createChooser(it, getString(R.string.chNav)));
+
+            }
+        });
+
+        botaoPs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://store.playstation.com/pt-br/latest");
+                Intent it = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(Intent.createChooser(it, getString(R.string.chNav)));
 
             }
