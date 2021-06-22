@@ -2,7 +2,10 @@ package com.example.catalogame;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
 public class Catfps extends AppCompatActivity {
     
@@ -20,7 +23,7 @@ public class Catfps extends AppCompatActivity {
         botaoCate = findViewById(R.id.btncatterror);
         botaoHom = findViewById(R.id.btnhometerror);
         botaoLanc = findViewById(R.id.btnlancterror);
-        botaoBf2042 = findViewById(R.id.btnbf2042);
+        botaoBf2042 = findViewById(R.id.btnbf20422);
         
         botaoCate.setOnClickListener(new View.OnClickListener() {
             @Override
