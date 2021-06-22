@@ -12,10 +12,9 @@ public class Categorias extends AppCompatActivity {
 
     ImageButton botaoHome;
     ImageButton botaoLanca;
-    Button botaofps;
-    Button botaosandbox;
     Button botaoterror;
-
+    Button botaofps;
+Button botaosandbox;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +57,7 @@ public class Categorias extends AppCompatActivity {
             }
             
         });
-        
+
         botaofps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,17 +65,17 @@ public class Categorias extends AppCompatActivity {
                 Intent telfps = new Intent(getApplicationContext(), Catfps.class);
                 startActivity(telfps);
             }
-            
+
         });
-        
+
         botaosandbox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent telsb = new Intent(getApplicationContext(), CatSandbox.class);
-                startActivity(telsb);
+                Intent telsandbox = new Intent(getApplicationContext(), CatSndbox.class);
+                startActivity(telsandbox);
             }
-            
+
         });
     }
 }

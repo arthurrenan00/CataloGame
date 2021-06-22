@@ -147,56 +147,52 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <LinearLayout
+            <Button
+                android:id="@+id/btnfps"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_marginTop="40dp"
-                android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/aldrich"
+                android:shadowColor="#00FFFFFF"
+                android:text="@string/fps"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/orange_100"
+                app:iconTint="#00FFFFFF"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0">
+                app:layout_constraintTop_toBottomOf="@+id/txtidcat" />
 
-                <Button
-                    android:id="@+id/btnfps"
-                    android:layout_width="fill_parent"
-                    android:layout_height="55dp"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/aldrich"
-                    android:shadowColor="#00FFFFFF"
-                    android:text="@string/fps"
-                    android:textColor="@color/white"
-                    android:textSize="17sp"
-                    android:textStyle="bold"
-                    app:backgroundTint="@color/orange_100"
-                    app:iconTint="#00FFFFFF" />
+            <Button
+                android:id="@+id/btnsandbox"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:fontFamily="@font/aldrich"
+                android:text="@string/sandbox"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/orange_100"
+                app:iconTint="#00FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnfps" />
 
-                <Button
-                    android:id="@+id/btnsandbox"
-                    android:layout_width="fill_parent"
-                    android:layout_height="55dp"
-                    android:fontFamily="@font/aldrich"
-                    android:text="@string/sandbox"
-                    android:textColor="@color/white"
-                    android:textSize="17sp"
-                    android:textStyle="bold"
-                    app:backgroundTint="@color/orange_100"
-                    app:iconTint="#00FFFFFF" />
-
-                <Button
-                    android:id="@+id/btnterror"
-                    android:layout_width="fill_parent"
-                    android:layout_height="55dp"
-                    android:fontFamily="@font/aldrich"
-                    android:text="@string/terror"
-                    android:textColor="#FFFFFF"
-                    android:textSize="17sp"
-                    android:textStyle="bold"
-                    app:backgroundTint="@color/orange_100"
-                    app:iconTint="#00FFFFFF" />
-            </LinearLayout>
+            <Button
+                android:id="@+id/btnterror"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:fontFamily="@font/aldrich"
+                android:text="@string/terror"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/orange_100"
+                app:iconTint="#00FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnsandbox" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

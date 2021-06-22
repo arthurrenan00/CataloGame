@@ -8,7 +8,7 @@
     tools:context=".Catfps">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarterror2"
+        android:id="@+id/toolbarfps"
         android:layout_width="412dp"
         android:layout_height="110dp"
         android:background="?attr/colorPrimary"
@@ -120,18 +120,18 @@
 
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="620dp"
+        android:layout_height="612dp"
         android:layout_marginTop="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarterror2">
+        app:layout_constraintTop_toBottomOf="@+id/toolbarfps">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:id="@+id/btnbf20422"
+                android:id="@+id/btnbf2"
                 android:layout_width="100dp"
                 android:layout_height="150dp"
                 android:layout_marginTop="15dp"
@@ -170,7 +170,7 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnbf20422" />
+                app:layout_constraintTop_toBottomOf="@+id/btnbf2" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

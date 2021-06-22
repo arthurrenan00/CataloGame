@@ -7,24 +7,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class CatSandbox extends AppCompatActivity {
+public class CatSndbox extends AppCompatActivity {
 
     ImageButton botaoCate;
     ImageButton botaoHom;
     ImageButton botaoLanc;
-    ImageButton botaoMine;
-    
+    ImageButton botaomine;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cat_sandbox);
+        setContentView(R.layout.activity_cat_sndbox);
         getSupportActionBar().hide();
 
-        botaoCate = findViewById(R.id.btncatterror);
-        botaoHom = findViewById(R.id.btnhometerror);
-        botaoLanc = findViewById(R.id.btnlancterror);
-        botaoMine = findViewById(R.id.btnmine2);
-        
+        botaoCate = findViewById(R.id.btncatsandbox);
+        botaoHom = findViewById(R.id.btnhomesandbox);
+        botaoLanc = findViewById(R.id.btnlancsandbox);
+        botaomine = findViewById(R.id.btnmine2);
+
         botaoCate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,7 +55,7 @@ public class CatSandbox extends AppCompatActivity {
 
         });
 
-        botaoMine.setOnClickListener(new View.OnClickListener(){
+        botaomine.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
 
@@ -63,5 +63,6 @@ public class CatSandbox extends AppCompatActivity {
                 startActivity(mine);
             }
         });
+
     }
 }

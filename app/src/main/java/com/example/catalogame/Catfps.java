@@ -8,11 +8,11 @@ import android.view.View;
 import android.widget.ImageButton;
 
 public class Catfps extends AppCompatActivity {
-    
+
     ImageButton botaoCate;
     ImageButton botaoHom;
     ImageButton botaoLanc;
-    ImageButton botaoBf2042;
+    ImageButton botaobf;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,11 +20,11 @@ public class Catfps extends AppCompatActivity {
         setContentView(R.layout.activity_catfps);
         getSupportActionBar().hide();
 
-        botaoCate = findViewById(R.id.btncatterror);
-        botaoHom = findViewById(R.id.btnhometerror);
-        botaoLanc = findViewById(R.id.btnlancterror);
-        botaoBf2042 = findViewById(R.id.btnbf20422);
-        
+        botaoCate = findViewById(R.id.btncatfps);
+        botaoHom = findViewById(R.id.btnhomefps);
+        botaoLanc = findViewById(R.id.btnlancfps);
+        botaobf = findViewById(R.id.btnbf2);
+
         botaoCate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,13 +55,14 @@ public class Catfps extends AppCompatActivity {
 
         });
 
-        botaoBf2042.setOnClickListener(new View.OnClickListener(){
+        botaobf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent bf = new Intent(getApplicationContext(), Bf2042.class);
-                startActivity(bf);
+                Intent ho = new Intent(getApplicationContext(), Bf2042.class);
+                startActivity(ho);
             }
+
         });
     }
 }
