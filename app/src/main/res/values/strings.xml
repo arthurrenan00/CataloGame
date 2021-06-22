@@ -26,4 +26,7 @@
     <string name="descSteam">Botão da biblioteca da Steam</string>
     <string name="descPs">Botão da biblioteca do Play Station</string>
     <string name="descXbox">Botão da biblioteca do Xbox</string>
+    <string name="fps">FPS</string>
+    <string name="sandbox">Sandbox</string>
+    <string name="terror">Terror</string>
 </resources>

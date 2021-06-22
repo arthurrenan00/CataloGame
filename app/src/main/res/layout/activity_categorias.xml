@@ -118,18 +118,87 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/txtidc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:fontFamily="@font/aldrich"
-        android:text="@string/titCat"
-        android:textColor="@color/purple_200"
-        android:textSize="25sp"
-        android:textStyle="bold"
+    <ScrollView
+        android:layout_width="412dp"
+        android:layout_height="620dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtidc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/aldrich"
+                android:text="@string/titCat"
+                android:textColor="@color/purple_200"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <Button
+                    android:id="@+id/btnfps"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/aldrich"
+                    android:shadowColor="#00FFFFFF"
+                    android:text="@string/fps"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/orange_100"
+                    app:iconTint="#00FFFFFF" />
+
+                <Button
+                    android:id="@+id/btnsandbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:fontFamily="@font/aldrich"
+                    android:text="@string/sandbox"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/orange_100"
+                    app:iconTint="#00FFFFFF" />
+
+                <Button
+                    android:id="@+id/btnterror"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:fontFamily="@font/aldrich"
+                    android:text="@string/terror"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/orange_100"
+                    app:iconTint="#00FFFFFF" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
