@@ -25,7 +25,10 @@ public class Categorias extends AppCompatActivity {
         
         botaoHome = findViewById(R.id.btnhome2);
         botaoLanca = findViewById(R.id.btnlanc2);
-
+        botaoterror = findViewById(R.id.btnterror);
+        botaofps = findViewById(R.id.btnfps);
+        botaosandbox = findViewById(R.id.btnsandbox);
+        
         botaoHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,6 +45,36 @@ public class Categorias extends AppCompatActivity {
 
                 Intent lancam = new Intent(getApplicationContext(), Lancamentos.class);
                 startActivity(lancam);
+            }
+            
+        });
+        
+        botaoterror.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent telterror = new Intent(getApplicationContext(), CatTerror.class);
+                startActivity(telterror);
+            }
+            
+        });
+        
+        botaofps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent telfps = new Intent(getApplicationContext(), Catfps.class);
+                startActivity(telfps);
+            }
+            
+        });
+        
+        botaosandbox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent telsb = new Intent(getApplicationContext(), CatSandbox.class);
+                startActivity(telsb);
             }
             
         });
