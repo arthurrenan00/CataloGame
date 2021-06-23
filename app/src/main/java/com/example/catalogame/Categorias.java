@@ -14,7 +14,7 @@ public class Categorias extends AppCompatActivity {
     ImageButton botaoLanca;
     Button botaoterror;
     Button botaofps;
-Button botaosandbox;
+    Button botaosandbox;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {

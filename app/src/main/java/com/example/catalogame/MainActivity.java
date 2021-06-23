@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton botaoLanc;
     ImageButton botaoMine;
     ImageButton botaoRevil;
+    ImageButton botaobf2042;
     ImageButton botaoSteam;
     ImageButton botaoXbox;
     ImageButton botaoPs;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         botaoLanc = findViewById(R.id.btnlanc1);
         botaoMine = findViewById(R.id.btnmine1);
         botaoRevil = findViewById(R.id.btnrevil1);
+        botaobf2042 = findViewById(R.id.btnbf1);
         botaoSteam = findViewById(R.id.btnsteam);
         botaoXbox = findViewById(R.id.btnxbox);
         botaoPs = findViewById(R.id.btnps);
@@ -67,6 +69,15 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent revil = new Intent(getApplicationContext(), Village.class);
                 startActivity(revil);
+            }
+        });
+
+        botaobf2042.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+
+                Intent bf2042 = new Intent(getApplicationContext(), Bf2042.class);
+                startActivity(bf2042);
             }
         });
 
