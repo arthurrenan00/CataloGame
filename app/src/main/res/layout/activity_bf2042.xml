@@ -55,7 +55,7 @@
         android:layout_marginRight="25dp"
         android:fontFamily="@font/aldrich"
         android:text="@string/titLanc"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
