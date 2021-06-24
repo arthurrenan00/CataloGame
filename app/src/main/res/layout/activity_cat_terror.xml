@@ -9,9 +9,9 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarterror"
-        android:layout_width="412dp"
+        android:layout_width="fill_parent"
         android:layout_height="110dp"
-        android:background="?attr/colorPrimary"
+        android:background="@color/orange_1"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
@@ -120,7 +120,7 @@
 
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="620dp"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -150,7 +150,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/aldrich"
                 android:text="@string/revil"
-                android:textColor="@color/laranja1"
+                android:textColor="@color/orange_1"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -165,7 +165,7 @@
                 android:fontFamily="@font/aldrich"
                 android:text="@string/terror"
                 android:textAllCaps="true"
-                android:textColor="@color/laranja1"
+                android:textColor="@color/orange_1"
                 android:textSize="25sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"

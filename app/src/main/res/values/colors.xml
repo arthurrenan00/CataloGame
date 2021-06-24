@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="laranja1">#FF5502</color>
-    <color name="laranja2">#FF5502</color>
-    <color name="purple_700">#FF7320</color>
-    <color name="orange_100">#FF752A</color>
+    <color name="orange_1">#FF5502</color>
+    <color name="orange_2">#FF5502</color>
+    <color name="orange_3">#FF7320</color>
+    <color name="orange_4">#FF752A</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>

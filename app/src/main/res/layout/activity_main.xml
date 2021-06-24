@@ -9,9 +9,9 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar1"
-        android:layout_width="412dp"
+        android:layout_width="fill_parent"
         android:layout_height="110dp"
-        android:background="?attr/colorPrimary"
+        android:background="@color/orange_1"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
@@ -119,19 +119,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:layout_width="412dp"
-        android:layout_height="620dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:verticalScrollbarPosition="right"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar1"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="1000dp">
 
             <ImageButton
                 android:id="@+id/btnps"
@@ -151,7 +150,7 @@
                 android:id="@+id/btnxbox"
                 android:layout_width="110dp"
                 android:layout_height="65dp"
-                android:layout_marginTop="350dp"
+                android:layout_marginTop="400dp"
                 android:layout_marginBottom="20dp"
                 android:background="#00FFFFFF"
                 android:contentDescription="@string/descXbox"
@@ -183,7 +182,7 @@
                 android:layout_marginTop="18dp"
                 android:fontFamily="@font/aldrich"
                 android:text="@string/resep2"
-                android:textColor="@color/laranja1"
+                android:textColor="@color/orange_1"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -197,7 +196,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/aldrich"
                 android:text="@string/resep1"
-                android:textColor="@color/laranja1"
+                android:textColor="@color/orange_1"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -213,7 +212,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/aldrich"
                 android:text="@string/mine"
-                android:textColor="@color/laranja1"
+                android:textColor="@color/orange_1"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -269,7 +268,7 @@
                 android:layout_marginRight="8dp"
                 android:fontFamily="@font/aldrich"
                 android:text="@string/bf2042"
-                android:textColor="@color/laranja1"
+                android:textColor="@color/orange_1"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -282,7 +281,7 @@
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/aldrich"
                 android:text="@string/titDesta"
-                android:textColor="@color/laranja1"
+                android:textColor="@color/orange_1"
                 android:textSize="23sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
