@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="2color/white"
+    android:background="@color/white"
     tools:context=".CatSndbox">
 
     <androidx.appcompat.widget.Toolbar
@@ -98,7 +98,7 @@
         android:layout_marginRight="25dp"
         android:fontFamily="@font/aldrich"
         android:text="@string/titLanc"
-        android:textColor="#@color/white"
+        android:textColor="@color/white"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
