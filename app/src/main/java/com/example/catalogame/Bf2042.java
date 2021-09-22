@@ -3,11 +3,13 @@ package com.example.catalogame;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class Bf2042 extends AppCompatActivity {
 
@@ -17,9 +19,17 @@ public class Bf2042 extends AppCompatActivity {
     ImageButton botaoSteambf;
     ImageButton botaoPsbf;
     ImageButton botaoXboxbf;
+    TextView likebf2042;
+    ImageButton botaolikebf2042;
+    public static final String PREFS_NAME = "memoria";
+    SharedPreferences settings;
+    int contadorbf2042 = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        settings = getSharedPreferences(PREFS_NAME, 0);
+        contadorbf2042 = settings.getInt("contadorbf2042",contadorbf2042);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bf2042);
         getSupportActionBar().hide();
@@ -30,6 +40,9 @@ public class Bf2042 extends AppCompatActivity {
         botaoSteambf = findViewById(R.id.btnsteambf2042);
         botaoPsbf = findViewById(R.id.btnpsbf2042);
         botaoXboxbf = findViewById(R.id.btnxboxbf2042);
+        likebf2042 = findViewById(R.id.txtlikebf2042);
+        botaolikebf2042 = findViewById(R.id.btnlikebf2042);
+        atualizarLike();
 
         WebView mWebView = (WebView) findViewById(R.id.webviewRm2);
 
@@ -100,5 +113,20 @@ public class Bf2042 extends AppCompatActivity {
 
             }
         });
+
+        botaolikebf2042.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                contadorbf2042++;
+                atualizarLike();
+                settings.edit().putInt("contadorbf2042", contadorbf2042).apply();
+
+            }
+        });
+    }
+
+    private void atualizarLike() {
+        String s = Integer.toString(contadorbf2042);
+        likebf2042.setText(s);
     }
 }

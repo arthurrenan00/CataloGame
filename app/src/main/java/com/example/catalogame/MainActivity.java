@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton botaoSteam;
     ImageButton botaoXbox;
     ImageButton botaoPs;
+
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(lanc);
             }
         });
+
         
         botaoMine.setOnClickListener(new View.OnClickListener(){
             @Override

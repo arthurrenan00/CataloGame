@@ -31,7 +31,8 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <ImageButton
         android:id="@+id/btnhomevil"
@@ -44,7 +45,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/homemarc" />
+        app:srcCompat="@drawable/homemarc"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/txtlancvil"
@@ -59,7 +61,8 @@
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <ImageButton
         android:id="@+id/btncatvil"
@@ -73,7 +76,8 @@
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/listamarc" />
+        app:srcCompat="@drawable/listamarc"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/btnlancvil"
@@ -87,7 +91,8 @@
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/rocketmarc" />
+        app:srcCompat="@drawable/rocketmarc"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/txttitulovil"
@@ -116,17 +121,19 @@
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:scrollbars="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbarvil">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="1000dp">
 
             <TextView
@@ -147,13 +154,13 @@
                 android:id="@+id/toolbar"
                 android:layout_width="350dp"
                 android:layout_height="210dp"
-                android:layout_marginTop="380dp"
+                android:layout_marginTop="130dp"
                 android:background="@color/orange_1"
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/imgvil" />
 
             <WebView
                 android:id="@+id/webviewRm1"
@@ -211,6 +218,34 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/toolbar"
                 app:srcCompat="@drawable/psnlogo" />
+
+            <ImageButton
+                android:id="@+id/btnlikerevil"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/descLike"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="@+id/imgvil"
+                app:layout_constraintStart_toStartOf="@+id/imgvil"
+                app:layout_constraintTop_toBottomOf="@+id/imgvil"
+                app:srcCompat="@drawable/like" />
+
+            <TextView
+                android:id="@+id/txtlikerevil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/aldrich"
+                android:text="@string/likes"
+                android:textColor="@color/orange_1"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnlikerevil"
+                app:layout_constraintStart_toStartOf="@+id/btnlikerevil"
+                app:layout_constraintTop_toBottomOf="@+id/btnlikerevil" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

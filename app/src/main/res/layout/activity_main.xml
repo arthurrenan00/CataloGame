@@ -23,48 +23,51 @@
         android:id="@+id/txttituloh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="5dp"
         android:fontFamily="@font/aldrich"
         android:text="@string/titPrincipal"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/btncat1"
-        android:layout_width="45dp"
-        android:layout_height="40dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="42dp"
         android:background="#00FFFFFF"
         android:contentDescription="@string/descCat"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/listamarc" />
+        app:srcCompat="@drawable/listamarc"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/btnhome1"
         android:layout_width="45dp"
         android:layout_height="40dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="45dp"
         android:background="#00FFFFFF"
         android:contentDescription="@string/descHome"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/homeselect" />
+        app:srcCompat="@drawable/homeselect"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/btnlanc1"
-        android:layout_width="45dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="50dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="45dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:background="#00FFFFFF"
@@ -78,8 +81,8 @@
         android:id="@+id/txtcath"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
         android:layout_marginTop="90dp"
         android:fontFamily="@font/aldrich"
         android:text="@string/titCat"
@@ -87,7 +90,8 @@
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/txthomeh"
@@ -101,7 +105,8 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/txtlanch"
@@ -116,7 +121,8 @@
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -187,7 +193,8 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnrevil1" />
+                app:layout_constraintTop_toBottomOf="@+id/btnrevil1"
+                tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:id="@+id/txtdestrevil"
@@ -201,7 +208,8 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnrevil1" />
+                app:layout_constraintTop_toBottomOf="@+id/btnrevil1"
+                tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:id="@+id/txtdestmine"
@@ -216,7 +224,8 @@
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnmine1" />
+                app:layout_constraintTop_toBottomOf="@+id/btnmine1"
+                tools:ignore="TextContrastCheck" />
 
             <ImageButton
                 android:id="@+id/btnrevil1"
@@ -272,7 +281,8 @@
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnbf1" />
+                app:layout_constraintTop_toBottomOf="@+id/btnbf1"
+                tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:id="@+id/txtidh"

@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CataloGame">
-        <activity android:name=".CatSndbox"></activity>
+
+        <activity android:name=".CatSndbox" />
         <activity android:name=".Catfps" />
         <activity android:name=".CatTerror" />
         <activity android:name=".Bf2042" />

@@ -3,11 +3,13 @@ package com.example.catalogame;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class Minecraft extends AppCompatActivity {
 
@@ -16,9 +18,17 @@ public class Minecraft extends AppCompatActivity {
     ImageButton botaoLanc;
     ImageButton botaoPsmine;
     ImageButton botaoXboxmine;
+    TextView likemine;
+    ImageButton botaolikemine;
+    public static final String PREFS_NAME = "memoria";
+    SharedPreferences settings;
+    int contador = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        settings = getSharedPreferences(PREFS_NAME, 0);
+        contador = settings.getInt("contador",contador);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_minecraft);
         getSupportActionBar().hide();
@@ -28,6 +38,9 @@ public class Minecraft extends AppCompatActivity {
         botaoLanc = findViewById(R.id.btnlancmine);
         botaoPsmine = findViewById(R.id.btnpsmine);
         botaoXboxmine = findViewById(R.id.btnxboxmine);
+        likemine = findViewById(R.id.txtlikemine);
+        botaolikemine = findViewById(R.id.btnlikemine);
+        atualizarLike();
 
         WebView mWebView = (WebView) findViewById(R.id.webviewRm);
 
@@ -88,5 +101,22 @@ public class Minecraft extends AppCompatActivity {
 
             }
         });
+
+        botaolikemine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                contador++;
+                atualizarLike();
+                settings.edit().putInt("contador", contador).apply();
+
+            }
+        });
+
     }
+
+    private void atualizarLike() {
+        String s = Integer.toString(contador);
+        likemine.setText(s);
+    }
+
 }

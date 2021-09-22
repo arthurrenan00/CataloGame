@@ -180,7 +180,7 @@
                 android:id="@+id/toolbar5"
                 android:layout_width="350dp"
                 android:layout_height="170dp"
-                android:layout_marginTop="90dp"
+                android:layout_marginTop="150dp"
                 android:background="@color/orange_1"
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme"
@@ -222,6 +222,33 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btnlikebf2042"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/descLike"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton"
+                app:layout_constraintStart_toStartOf="@+id/imageButton"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton"
+                app:srcCompat="@drawable/like" />
+
+            <TextView
+                android:id="@+id/txtlikebf2042"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/aldrich"
+                android:text="@string/likes"
+                android:textColor="@color/orange_1"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnlikebf2042"
+                app:layout_constraintStart_toStartOf="@+id/btnlikebf2042"
+                app:layout_constraintTop_toBottomOf="@+id/btnlikebf2042" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

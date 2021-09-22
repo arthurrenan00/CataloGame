@@ -44,7 +44,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/homemarc" />
+        app:srcCompat="@drawable/homemarc"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/btncatmine"
@@ -58,7 +59,8 @@
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/listamarc" />
+        app:srcCompat="@drawable/listamarc"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/btnlancmine"
@@ -72,7 +74,8 @@
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/rocketmarc" />
+        app:srcCompat="@drawable/rocketmarc"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/txtcatmine"
@@ -87,7 +90,8 @@
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/txtlancmine"
@@ -102,7 +106,8 @@
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/txthomemine"
@@ -116,17 +121,20 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <ScrollView
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:scrollbars="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbarmine">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="1000dp">
 
             <ImageView
@@ -145,25 +153,13 @@
                 android:id="@+id/toolbar4"
                 android:layout_width="350dp"
                 android:layout_height="180dp"
-                android:layout_marginTop="90dp"
+                android:layout_marginTop="130dp"
                 android:background="@color/orange_1"
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imgmine" />
-
-            <WebView
-                android:id="@+id/webviewRm"
-                android:layout_width="340dp"
-                android:layout_height="170dp"
-                android:background="@color/orange_1"
-                app:layout_constraintBottom_toBottomOf="@+id/toolbar4"
-                app:layout_constraintEnd_toEndOf="@+id/toolbar4"
-                app:layout_constraintStart_toStartOf="@+id/toolbar4"
-                app:layout_constraintTop_toTopOf="@+id/toolbar4">
-
-            </WebView>
 
             <TextView
                 android:id="@+id/txtidmine"
@@ -209,7 +205,47 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/toolbar4"
-                app:srcCompat="@drawable/xbox_4" />
+                app:srcCompat="@drawable/xbox_4"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/btnlikemine"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/descLike"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="@+id/imgmine"
+                app:layout_constraintStart_toStartOf="@+id/imgmine"
+                app:layout_constraintTop_toBottomOf="@+id/imgmine"
+                app:srcCompat="@drawable/like" />
+
+            <TextView
+                android:id="@+id/txtlikemine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/aldrich"
+                android:text="@string/likes"
+                android:textColor="@color/orange_1"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnlikemine"
+                app:layout_constraintStart_toStartOf="@+id/btnlikemine"
+                app:layout_constraintTop_toBottomOf="@+id/btnlikemine" />
+
+            <WebView
+                android:id="@+id/webviewRm"
+                android:layout_width="340dp"
+                android:layout_height="170dp"
+                android:background="@color/orange_1"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbar4"
+                app:layout_constraintEnd_toEndOf="@+id/toolbar4"
+                app:layout_constraintStart_toStartOf="@+id/toolbar4"
+                app:layout_constraintTop_toTopOf="@+id/toolbar4">
+
+            </WebView>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
