@@ -142,14 +142,15 @@
                 android:id="@+id/btnps"
                 android:layout_width="110dp"
                 android:layout_height="65dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginStart="175dp"
+                android:layout_marginLeft="175dp"
                 android:layout_marginBottom="20dp"
                 android:background="#00FFFFFF"
                 android:contentDescription="@string/descPs"
                 android:scaleType="fitCenter"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/psstore" />
 
             <ImageButton
@@ -157,6 +158,8 @@
                 android:layout_width="110dp"
                 android:layout_height="65dp"
                 android:layout_marginTop="400dp"
+                android:layout_marginEnd="175dp"
+                android:layout_marginRight="175dp"
                 android:layout_marginBottom="20dp"
                 android:background="#00FFFFFF"
                 android:contentDescription="@string/descXbox"
@@ -171,13 +174,14 @@
                 android:id="@+id/btnsteam"
                 android:layout_width="110dp"
                 android:layout_height="65dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="175dp"
+                android:layout_marginRight="175dp"
+                android:layout_marginBottom="10dp"
                 android:background="#00FFFFFF"
                 android:contentDescription="@string/descSteam"
                 android:scaleType="fitCenter"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/btnxbox"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/steamloja" />
 
@@ -297,6 +301,33 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnlocalizacao"
+                android:layout_width="124dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="175dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/localizacao"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:backgroundTint="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/btnps"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txtlocalizacao"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="8dp"
+                android:text="TextView"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/btnlocalizacao"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
