@@ -18,6 +18,7 @@ public class Lancamentos extends AppCompatActivity {
     ImageButton botaoCate;
     ImageButton botaoHom;
     ImageButton botaoRevil;
+    ImageButton botaoUser;
     SensorManager sensorManager;
     Sensor sensor;
     SensorEventListener sensorEventListener;
@@ -71,6 +72,7 @@ public class Lancamentos extends AppCompatActivity {
         botaoCate = findViewById(R.id.btncat3);
         botaoHom = findViewById(R.id.btnhome3);
         botaoRevil = findViewById(R.id.btnrevil);
+        botaoUser = findViewById(R.id.btnuserlanc);
 
         botaoCate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,6 +80,17 @@ public class Lancamentos extends AppCompatActivity {
 
                 Intent cate = new Intent(getApplicationContext(), Categorias.class);
                 startActivity(cate);
+            }
+            
+        });
+        
+        
+        botaoUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent user = new Intent(getApplicationContext(), Usuario.class);
+                startActivity(user);
             }
             
         });
