@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity  implements EnderecoAtual.On
     ImageButton botaoCategorias;
     ImageButton botaoLanc;
     ImageButton botaoMine;
+    ImageButton botaoUser;
     ImageButton botaoRevil;
     ImageButton botaobf2042;
     ImageButton botaoSteam;
@@ -114,7 +115,9 @@ public class MainActivity extends AppCompatActivity  implements EnderecoAtual.On
         botaoSteam = findViewById(R.id.btnsteam);
         botaoXbox = findViewById(R.id.btnxbox);
         botaoPs = findViewById(R.id.btnps);
-
+        botaoUser = findViewById(R.id.btnuserhome);
+        
+        
         botaoCategorias.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -190,6 +193,16 @@ public class MainActivity extends AppCompatActivity  implements EnderecoAtual.On
                 startActivity(Intent.createChooser(it, getString(R.string.chNav)));
 
             }
+        });
+        
+        botaoUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent user = new Intent(getApplicationContext(), Usuario.class);
+                startActivity(user);
+            }
+            
         });
     }
 
