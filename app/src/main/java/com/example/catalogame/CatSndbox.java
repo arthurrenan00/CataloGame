@@ -25,7 +25,7 @@ public class CatSndbox extends AppCompatActivity {
         botaoHom = findViewById(R.id.btnhomesandbox);
         botaoLanc = findViewById(R.id.btnlancsandbox);
         botaomine = findViewById(R.id.btnmine2);
-        botaoUser = findViewById(R.id.btnusercatsndbox);
+        botaoUser = findViewById(R.id.btnusersndbox);
 
         botaoCate.setOnClickListener(new View.OnClickListener() {
             @Override
