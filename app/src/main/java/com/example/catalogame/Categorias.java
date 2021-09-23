@@ -18,6 +18,7 @@ public class Categorias extends AppCompatActivity {
 
     ImageButton botaoHome;
     ImageButton botaoLanca;
+    ImageButton botaoUser;
     Button botaoterror;
     Button botaofps;
     Button botaosandbox;
@@ -75,6 +76,7 @@ public class Categorias extends AppCompatActivity {
         botaoterror = findViewById(R.id.btnterror);
         botaofps = findViewById(R.id.btnfps);
         botaosandbox = findViewById(R.id.btnsandbox);
+        botaoUser = findViewById(R.id.btnusercat);
         
         botaoHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,6 +84,16 @@ public class Categorias extends AppCompatActivity {
 
                 Intent home = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(home);
+            }
+            
+        });
+        
+        botaoUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent user = new Intent(getApplicationContext(), Usuario.class);
+                startActivity(user);
             }
             
         });
