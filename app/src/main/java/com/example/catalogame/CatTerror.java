@@ -13,7 +13,8 @@ public class CatTerror extends AppCompatActivity {
     ImageButton botaoHom;
     ImageButton botaoLanc;
     ImageButton botaoRevil;
-
+    ImageButton botaoUser;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +25,7 @@ public class CatTerror extends AppCompatActivity {
         botaoHom = findViewById(R.id.btnhometerror);
         botaoLanc = findViewById(R.id.btnlancterror);
         botaoRevil = findViewById(R.id.btnrevil2);
-
+        botaoUser = findViewById(R.id.btnuserterror);
 
         botaoCate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +35,16 @@ public class CatTerror extends AppCompatActivity {
                 startActivity(cate);
             }
 
+        });
+        
+        botaoUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent user = new Intent(getApplicationContext(), Usuario.class);
+                startActivity(user);
+            }
+            
         });
 
         botaoHom.setOnClickListener(new View.OnClickListener() {
