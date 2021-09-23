@@ -105,7 +105,7 @@ public class Usuario extends AppCompatActivity implements EnderecoAtual.OnTaskCo
 
         
         botaoHome = findViewById(R.id.btnhomeu);
-        botaoCate = findViewById(R.id.btnlancu);
+        botaoCate = findViewById(R.id.btncatu);
         botaoLanca = findViewById(R.id.btnlancu);
         editTexti = findViewById(R.id.edittexti);
 
