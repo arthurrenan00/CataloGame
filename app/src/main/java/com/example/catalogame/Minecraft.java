@@ -18,7 +18,6 @@ public class Minecraft extends AppCompatActivity {
     ImageButton botaoLanc;
     ImageButton botaoPsmine;
     ImageButton botaoXboxmine;
-    ImageButton botaoUser;
     TextView likemine;
     ImageButton botaolikemine;
     public static final String PREFS_NAME = "memoria";
@@ -39,7 +38,6 @@ public class Minecraft extends AppCompatActivity {
         botaoLanc = findViewById(R.id.btnlancmine);
         botaoPsmine = findViewById(R.id.btnpsmine);
         botaoXboxmine = findViewById(R.id.btnxboxmine);
-        botaoUser = findViewById(R.id.btnusermine);
         likemine = findViewById(R.id.txtlikemine);
         botaolikemine = findViewById(R.id.btnlikemine);
         atualizarLike();
@@ -73,16 +71,7 @@ public class Minecraft extends AppCompatActivity {
             }
 
         });
-        
-        botaoUser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent user = new Intent(getApplicationContext(), Usuario.class);
-                startActivity(user);
-            }
-            
-        });
 
         botaoLanc.setOnClickListener(new View.OnClickListener() {
             @Override

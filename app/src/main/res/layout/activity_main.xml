@@ -128,10 +128,10 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar1"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
@@ -295,34 +295,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/txtlocalizacao"
-                android:layout_width="124dp"
-                android:layout_height="150dp"
-                android:fontFamily="@font/aldrich"
-                android:gravity="bottom|left"
-                android:text="@string/txtlocalizacao"
-                android:textColor="@color/orange_1"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/btnlocalizacao"
-                app:layout_constraintEnd_toEndOf="@+id/btnlocalizacao"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="@+id/btnlocalizacao" />
-
-            <ImageButton
-                android:id="@+id/btnlocalizacao"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:background="#00FFFFFF"
-                android:contentDescription="@string/desclocal"
-                android:scaleType="fitCenter"
-                app:layout_constraintBottom_toTopOf="@+id/btnxbox"
-                app:layout_constraintEnd_toEndOf="@+id/btnxbox"
-                app:layout_constraintStart_toStartOf="@+id/btnxbox"
-                app:srcCompat="@drawable/pinlaranja"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

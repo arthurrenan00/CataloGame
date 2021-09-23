@@ -17,7 +17,6 @@ public class Village extends AppCompatActivity {
     ImageButton botaoHom;
     ImageButton botaoLanc;
     ImageButton botaoSteamvil;
-    ImageButton botaoUser;
     ImageButton botaoPsvil;
     TextView likerevil;
     ImageButton botaolikerevil;
@@ -38,7 +37,6 @@ public class Village extends AppCompatActivity {
         botaoHom = findViewById(R.id.btnhomevil);
         botaoLanc = findViewById(R.id.btnlancvil);
         botaoSteamvil = findViewById(R.id.btnsteamvil);
-        botaoUser = findViewById(R.id.btnuservil);
         botaoPsvil = findViewById(R.id.btnpsvil);
         likerevil = findViewById(R.id.txtlikerevil);
         botaolikerevil = findViewById(R.id.btnlikerevil);
@@ -73,16 +71,6 @@ public class Village extends AppCompatActivity {
                 startActivity(ho);
             }
 
-        });
-        
-        botaoUser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent user = new Intent(getApplicationContext(), Usuario.class);
-                startActivity(user);
-            }
-            
         });
 
         botaoLanc.setOnClickListener(new View.OnClickListener() {

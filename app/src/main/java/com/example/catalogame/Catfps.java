@@ -13,7 +13,6 @@ public class Catfps extends AppCompatActivity {
     ImageButton botaoHom;
     ImageButton botaoLanc;
     ImageButton botaobf;
-    ImageButton botaoUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +24,7 @@ public class Catfps extends AppCompatActivity {
         botaoHom = findViewById(R.id.btnhomefps);
         botaoLanc = findViewById(R.id.btnlancfps);
         botaobf = findViewById(R.id.btnbf2);
-        botaoUser = findViewById(R.id.btnuserfps);
-        
+
         botaoCate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,16 +34,7 @@ public class Catfps extends AppCompatActivity {
             }
 
         });
-        
-        botaoUser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent user = new Intent(getApplicationContext(), Usuario.class);
-                startActivity(user);
-            }
-            
-        });
         
         botaoHom.setOnClickListener(new View.OnClickListener() {
             @Override

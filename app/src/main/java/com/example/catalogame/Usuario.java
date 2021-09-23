@@ -1,8 +1,25 @@
 package com.example.catalogame;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationResult;
+import com.google.android.gms.location.LocationServices;
 
 public class Usuario extends AppCompatActivity implements EnderecoAtual.OnTaskCompleted {
 
@@ -27,13 +44,13 @@ public class Usuario extends AppCompatActivity implements EnderecoAtual.OnTaskCo
     private String lastAdress = "";
     
     ImageButton botaoCate;
-    ImageButton botaoHom;
+    ImageButton botaoHome;
     ImageButton botaoLanca;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide(); // remove a action bar
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_usuario);
         
         mLocationButton = (Button) findViewById(R.id.btnlocalizacao);
@@ -67,7 +84,7 @@ public class Usuario extends AppCompatActivity implements EnderecoAtual.OnTaskCo
             public void onLocationResult(LocationResult locationResult) {
                 
                 if (mTrackingLocation) {
-                    new EnderecoAtual(MainActivity.this, MainActivity.this)
+                    new EnderecoAtual(Usuario.this, Usuario.this)
                             .execute(locationResult.getLastLocation());
                 }
             }

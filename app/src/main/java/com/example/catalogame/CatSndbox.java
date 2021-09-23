@@ -13,7 +13,7 @@ public class CatSndbox extends AppCompatActivity {
     ImageButton botaoHom;
     ImageButton botaoLanc;
     ImageButton botaomine;
-    ImageButton botaoUser;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,6 @@ public class CatSndbox extends AppCompatActivity {
         botaoHom = findViewById(R.id.btnhomesandbox);
         botaoLanc = findViewById(R.id.btnlancsandbox);
         botaomine = findViewById(R.id.btnmine2);
-        botaoUser = findViewById(R.id.btnusersndbox);
 
         botaoCate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,16 +34,6 @@ public class CatSndbox extends AppCompatActivity {
                 startActivity(cate);
             }
 
-        });
-        
-        botaoUser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent user = new Intent(getApplicationContext(), Usuario.class);
-                startActivity(user);
-            }
-            
         });
 
         botaoHom.setOnClickListener(new View.OnClickListener() {

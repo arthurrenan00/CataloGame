@@ -34,9 +34,10 @@
     <string name="likes">0</string>
     <string name="localizacao">Localização</string>
     <string name="desclocal">Botão da localização</string>
-    <string name="txtlocalizacao">Clique no pin para ver sua localização</string>
+    <string name="txtlocalizacao">Clique no botão para ver sua localização</string>
     <string name="favs">Favoritos</string>
     <string name="user">PERFIL</string>
+    <string name="descuser">Botão da tela usuários</string>
 
     <string name="endereco">"Endereço: %1$s  \n Latitude: %2$s \n Longitude: %3$s \n Timestamp: %4$tr"</string>
     <string name="loading">Carregando</string>
