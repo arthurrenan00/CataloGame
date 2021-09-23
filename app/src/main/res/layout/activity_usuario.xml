@@ -51,8 +51,8 @@
 
     <ImageButton
         android:id="@+id/btnhomeu"
-        android:layout_width="45dp"
-        android:layout_height="40dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="100dp"
         android:layout_marginRight="100dp"
@@ -62,7 +62,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btnuseru"
         app:layout_constraintStart_toEndOf="@+id/btncatu"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/homeselect"
+        app:srcCompat="@drawable/homemarc"
         tools:ignore="TouchTargetSizeCheck" />
 
     <ImageButton
@@ -98,7 +98,6 @@
         android:id="@+id/txthomeu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:fontFamily="@font/aldrich"
         android:text="@string/tithome"
         android:textColor="@color/white"
@@ -274,7 +273,9 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp"
+                android:onClick="Salvar"
                 android:text="@string/adicionar"
+                android:textColor="#FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/edittexti" />
 
@@ -284,7 +285,10 @@
                 android:layout_height="65dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
+                android:onClick="Ler"
                 android:text="@string/visualizar"
+                android:textColor="#FFFFFF"
+                android:textColorHint="@color/orange_1"
                 app:layout_constraintBottom_toBottomOf="@+id/btngravari"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/btngravari" />
@@ -297,6 +301,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp"
                 android:text="@string/adicionar"
+                android:textColor="#FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/edittexte" />
 
@@ -307,6 +312,7 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
                 android:text="@string/visualizar"
+                android:textColor="#FFFFFF"
                 app:layout_constraintBottom_toBottomOf="@+id/btngravare"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/btngravare" />
@@ -319,8 +325,10 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:ems="10"
+                android:hint="@string/nomedojogo"
                 android:inputType="textPersonName"
-                android:text="Name"
+                android:textColor="@color/orange_1"
+                android:textColorHint="#575757"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtidinterno" />
 
@@ -332,8 +340,10 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:ems="10"
+                android:hint="@string/nomedojogo"
                 android:inputType="textPersonName"
-                android:text="Name"
+                android:textColor="@color/orange_1"
+                android:textColorHint="@color/orange_1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtidexterno" />
 
