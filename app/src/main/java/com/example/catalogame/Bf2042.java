@@ -16,6 +16,7 @@ public class Bf2042 extends AppCompatActivity {
     ImageButton botaoCate;
     ImageButton botaoHom;
     ImageButton botaoLanc;
+    ImageButton botaoUser;
     ImageButton botaoSteambf;
     ImageButton botaoPsbf;
     ImageButton botaoXboxbf;
@@ -40,6 +41,7 @@ public class Bf2042 extends AppCompatActivity {
         botaoSteambf = findViewById(R.id.btnsteambf2042);
         botaoPsbf = findViewById(R.id.btnpsbf2042);
         botaoXboxbf = findViewById(R.id.btnxboxbf2042);
+        botaoUser = findViewById(R.id.btnuserbf2042);
         likebf2042 = findViewById(R.id.txtlikebf2042);
         botaolikebf2042 = findViewById(R.id.btnlikebf2042);
         atualizarLike();
@@ -62,6 +64,16 @@ public class Bf2042 extends AppCompatActivity {
                 startActivity(cate);
             }
 
+        });
+        
+        botaoUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent user = new Intent(getApplicationContext(), Usuario.class);
+                startActivity(user);
+            }
+            
         });
 
         botaoHom.setOnClickListener(new View.OnClickListener() {
