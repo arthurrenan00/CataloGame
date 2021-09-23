@@ -6,4 +6,146 @@
     android:layout_height="match_parent"
     tools:context=".Usuario">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar7"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:background="@color/orange_1"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txttituloh3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/titPrincipal"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btncatu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="42dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/descCat"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/listamarc"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btnhomeu"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/descHome"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/btnuseru"
+        app:layout_constraintStart_toEndOf="@+id/btncatu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homeselect"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btnlancu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="45dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/descLanc"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/btnuseru"
+        app:layout_constraintStart_toEndOf="@+id/btncatu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rocketmarc" />
+
+    <TextView
+        android:id="@+id/txtcatu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/titCat"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btncatu"
+        app:layout_constraintStart_toStartOf="@+id/btncatu"
+        app:layout_constraintTop_toBottomOf="@+id/btncatu"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txthomeu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/tithome"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnhomeu"
+        app:layout_constraintStart_toStartOf="@+id/btnhomeu"
+        app:layout_constraintTop_toBottomOf="@+id/btnhomeu"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtlancu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/titLanc"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnlancu"
+        app:layout_constraintStart_toStartOf="@+id/btnlancu"
+        app:layout_constraintTop_toBottomOf="@+id/btnlancu"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btnuseru"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtuseru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="@string/user"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnuseru"
+        app:layout_constraintStart_toStartOf="@+id/btnuseru"
+        app:layout_constraintTop_toBottomOf="@+id/btnuseru" />
 </androidx.constraintlayout.widget.ConstraintLayout>
