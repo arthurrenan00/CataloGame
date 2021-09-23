@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -12,24 +11,18 @@ import android.net.Uri;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 
-import android.os.Vibrator;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
-import android.hardware.SensorManager;
+
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
-
-import java.io.UnsupportedEncodingException;import java.net.URLEncoder;
 
 public class MainActivity extends AppCompatActivity  implements EnderecoAtual.OnTaskCompleted {
 
@@ -40,17 +33,14 @@ public class MainActivity extends AppCompatActivity  implements EnderecoAtual.On
     private static final String LONGITUDE_KEY = "longitude";
     private static final String LASTDATE_KEY = "data";
 
-    // Views
     private Button mLocationButton;
     private TextView mLocationTextView;
     private static final String LASTADRESS_KEY = "adress";
     private FusedLocationProviderClient mFusedLocationClient;
     private LocationCallback mLocationCallback;
-    // private Location location;
-    // classes Location
+
     private boolean mTrackingLocation;
 
-    // Shared preferences
     private SharedPreferences mPreferences;
     private String lastLatitude = "";
     private String lastLongitude = "";
@@ -87,10 +77,7 @@ public class MainActivity extends AppCompatActivity  implements EnderecoAtual.On
 
 // Listener do botão de localização.
         mLocationButton.setOnClickListener(new View.OnClickListener() {
-            /**
-             * Toggle the tracking state.
-             * @param v The track location button.
-             */
+
             @Override
             public void onClick(View v) {
                 if (!mTrackingLocation) {
@@ -103,11 +90,7 @@ public class MainActivity extends AppCompatActivity  implements EnderecoAtual.On
 
         // Inicializa os callbacks da locations.
         mLocationCallback = new LocationCallback() {
-            /**
-             * This is the callback that is triggered when the
-             * FusedLocationClient updates your location.
-             * @param locationResult The result containing the device location.
-             */
+
             @Override
             public void onLocationResult(LocationResult locationResult) {
                 // If tracking is turned on, reverse geocode into an address
@@ -244,9 +227,7 @@ public class MainActivity extends AppCompatActivity  implements EnderecoAtual.On
         return locationRequest;
     }
 
-    /**
-     * Para a busca da localização
-     */
+
     private void stopTrackingLocation() {
         if (mTrackingLocation) {
             mTrackingLocation = false;
@@ -256,7 +237,7 @@ public class MainActivity extends AppCompatActivity  implements EnderecoAtual.On
     }
 
     /**
-     * Salva a ultima localização
+     * SAVED INSTANCE NO APP
      */
     @Override
     protected void onSaveInstanceState(Bundle outState) {
@@ -284,7 +265,7 @@ public class MainActivity extends AppCompatActivity  implements EnderecoAtual.On
     }
 
 
-    //Método com a resposta da BuscarEndereco
+
     @Override
     public void onTaskCompleted(String[] result) {
         if (mTrackingLocation) {
@@ -297,7 +278,6 @@ public class MainActivity extends AppCompatActivity  implements EnderecoAtual.On
         }
     }
 
-    //sobrescreve os métodos referentes aos sensores
     @Override
     protected void onPause() {
         super.onPause();
@@ -318,7 +298,6 @@ public class MainActivity extends AppCompatActivity  implements EnderecoAtual.On
     }
 
 
-    //armazena os dados
     private void armazenar(String latitude, String longitude, String lastAdress) {
         SharedPreferences.Editor preferencesEditor = mPreferences.edit();
         preferencesEditor.putString(LATITUDE_KEY, latitude);
