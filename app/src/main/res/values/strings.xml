@@ -42,6 +42,7 @@
     <string name="armazenamentoe">Armazenamento Externo</string>
     <string name="adicionar">ADICIONAR</string>
     <string name="visualizar">VISUALIZAR</string>
+    <string name="salvar">Salvar</string>
 
     <string name="endereco">"Endereço: %1$s  \n Latitude: %2$s \n Longitude: %3$s \n Timestamp: %4$tr"</string>
     <string name="loading">Carregando</string>
