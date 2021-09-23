@@ -25,7 +25,7 @@ public class Catfps extends AppCompatActivity {
         botaoHom = findViewById(R.id.btnhomefps);
         botaoLanc = findViewById(R.id.btnlancfps);
         botaobf = findViewById(R.id.btnbf2);
-        botaoUser = findViewById(R.id.btnuserhome);
+        botaoUser = findViewById(R.id.btnuserfps);
         
         botaoCate.setOnClickListener(new View.OnClickListener() {
             @Override
