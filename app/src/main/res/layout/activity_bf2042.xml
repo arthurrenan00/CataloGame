@@ -119,15 +119,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbarbf2042">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="1000dp">
+            android:layout_height="wrap_content">
 
             <ImageButton
                 android:id="@+id/btnxboxbf2042"
@@ -249,6 +250,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/btnlikebf2042"
                 app:layout_constraintStart_toStartOf="@+id/btnlikebf2042"
                 app:layout_constraintTop_toBottomOf="@+id/btnlikebf2042" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

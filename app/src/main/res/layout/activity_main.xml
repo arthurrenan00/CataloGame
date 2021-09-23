@@ -38,8 +38,8 @@
         android:id="@+id/btncat1"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="42dp"
         android:background="#00FFFFFF"
         android:contentDescription="@string/descCat"
@@ -54,11 +54,13 @@
         android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginTop="45dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
         android:background="#00FFFFFF"
         android:contentDescription="@string/descHome"
         android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnuserh"
+        app:layout_constraintStart_toEndOf="@+id/btncat1"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/homeselect"
         tools:ignore="TouchTargetSizeCheck" />
@@ -67,13 +69,14 @@
         android:id="@+id/btnlanc1"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
         android:layout_marginTop="45dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
         android:background="#00FFFFFF"
         android:contentDescription="@string/descLanc"
         android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnuserh"
+        app:layout_constraintStart_toEndOf="@+id/btncat1"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/rocketmarc" />
 
@@ -81,62 +84,59 @@
         android:id="@+id/txtcath"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="90dp"
         android:fontFamily="@font/aldrich"
         android:text="@string/titCat"
         android:textColor="@color/white"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btncat1"
+        app:layout_constraintStart_toStartOf="@+id/btncat1"
+        app:layout_constraintTop_toBottomOf="@+id/btncat1"
         tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/txthomeh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="7dp"
         android:fontFamily="@font/aldrich"
         android:text="@string/tithome"
         android:textColor="@color/white"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnhome1"
+        app:layout_constraintStart_toStartOf="@+id/btnhome1"
+        app:layout_constraintTop_toBottomOf="@+id/btnhome1"
         tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/txtlanch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
         android:fontFamily="@font/aldrich"
         android:text="@string/titLanc"
         android:textColor="@color/white"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnlanc1"
+        app:layout_constraintStart_toStartOf="@+id/btnlanc1"
+        app:layout_constraintTop_toBottomOf="@+id/btnlanc1"
         tools:ignore="TextContrastCheck" />
 
     <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="vertical"
-        android:verticalScrollbarPosition="right"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar1">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1"
+        app:layout_constraintVertical_bias="1.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
-            android:layout_height="1000dp">
+            android:layout_height="wrap_content">
 
             <ImageButton
                 android:id="@+id/btnps"
@@ -296,24 +296,10 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
-                android:id="@+id/btnlocalizacao"
-                android:layout_width="124dp"
-                android:layout_height="75dp"
-                android:layout_marginBottom="10dp"
-                android:text="@string/localizacao"
-                android:textColor="#FFFFFF"
-                android:textSize="12sp"
-                app:backgroundTint="#000000"
-                app:layout_constraintBottom_toTopOf="@+id/btnxbox"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
             <TextView
                 android:id="@+id/txtlocalizacao"
                 android:layout_width="124dp"
                 android:layout_height="150dp"
-                android:layout_marginBottom="5dp"
                 android:fontFamily="@font/aldrich"
                 android:gravity="bottom|left"
                 android:text="@string/txtlocalizacao"
@@ -324,7 +310,48 @@
                 app:layout_constraintEnd_toEndOf="@+id/btnlocalizacao"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="@+id/btnlocalizacao" />
+
+            <ImageButton
+                android:id="@+id/btnlocalizacao"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/desclocal"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/btnxbox"
+                app:layout_constraintEnd_toEndOf="@+id/btnxbox"
+                app:layout_constraintStart_toStartOf="@+id/btnxbox"
+                app:srcCompat="@drawable/pinlaranja"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
+    <ImageButton
+        android:id="@+id/btnuserh"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="@string/user"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnuserh"
+        app:layout_constraintStart_toStartOf="@+id/btnuserh"
+        app:layout_constraintTop_toBottomOf="@+id/btnuserh" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

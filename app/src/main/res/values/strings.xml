@@ -1,10 +1,8 @@
 <resources>
     <string name="app_name">CataloGame</string>
     <string name="titPrincipal">CATALOGAME</string>
-    <string name="Titulodividido1">CATALO</string>
-    <string name="Titulodividido2">GAME</string>
     <string name="tithome">HOME</string>
-    <string name="titLanc">LANÇAMENTOS</string>
+    <string name="titLanc">NOVOS</string>
     <string name="titCat">CATEGORIAS</string>
     <string name="titDesta">DESTAQUES</string>
     <string name="chNav">ESCOLHA</string>
@@ -29,14 +27,16 @@
     <string name="descPs">Botão da biblioteca do Play Station</string>
     <string name="descXbox">Botão da biblioteca do Xbox</string>
     <string name="descLike">Botão de like</string>
-    <string name="descDeslike">Botão de deslike</string>
-    <string name="like"></string>
+    <string name="like">0</string>
     <string name="fps">FPS</string>
     <string name="sandbox">Sandbox</string>
     <string name="terror">Terror</string>
     <string name="likes">0</string>
     <string name="localizacao">Localização</string>
-    <string name="txtlocalizacao">Clique no botão abaixo para ver sua localização</string>
+    <string name="desclocal">Botão da localização</string>
+    <string name="txtlocalizacao">Clique no pin para ver sua localização</string>
+    <string name="favs">Favoritos</string>
+    <string name="user">PERFIL</string>
 
     <string name="endereco">"Endereço: %1$s  \n Latitude: %2$s \n Longitude: %3$s \n Timestamp: %4$tr"</string>
     <string name="loading">Carregando</string>

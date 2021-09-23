@@ -15,22 +15,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CataloGame">
         <activity
+            android:name=".Usuario"
+            android:exported="true" />
+        <activity
             android:name=".SplashActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".CatSndbox" />
         <activity android:name=".Catfps" />
         <activity android:name=".CatTerror" />
         <activity android:name=".Bf2042" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".WebViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.WebViewActivity" />

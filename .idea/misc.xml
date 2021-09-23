@@ -4,10 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Gustavo/AndroidStudioProjects/CataloGame/app/src/main/res/layout/activity_bf2042.xml" value="0.25" />
+        <entry key="..\:/Users/Gustavo/AndroidStudioProjects/CataloGame/app/src/main/res/layout/activity_cat_sndbox.xml" value="0.17316017316017315" />
+        <entry key="..\:/Users/Gustavo/AndroidStudioProjects/CataloGame/app/src/main/res/layout/activity_cat_terror.xml" value="0.17316017316017315" />
         <entry key="..\:/Users/Gustavo/AndroidStudioProjects/CataloGame/app/src/main/res/layout/activity_categorias.xml" value="0.18947368421052632" />
-        <entry key="..\:/Users/Gustavo/AndroidStudioProjects/CataloGame/app/src/main/res/layout/activity_lancamentos.xml" value="0.18947368421052632" />
+        <entry key="..\:/Users/Gustavo/AndroidStudioProjects/CataloGame/app/src/main/res/layout/activity_catfps.xml" value="0.17316017316017315" />
+        <entry key="..\:/Users/Gustavo/AndroidStudioProjects/CataloGame/app/src/main/res/layout/activity_lancamentos.xml" value="0.33" />
         <entry key="..\:/Users/Gustavo/AndroidStudioProjects/CataloGame/app/src/main/res/layout/activity_login.xml" value="0.33" />
-        <entry key="..\:/Users/Gustavo/AndroidStudioProjects/CataloGame/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Gustavo/AndroidStudioProjects/CataloGame/app/src/main/res/layout/activity_main.xml" value="0.4044489383215369" />
         <entry key="..\:/Users/Gustavo/AndroidStudioProjects/CataloGame/app/src/main/res/layout/activity_minecraft.xml" value="0.33" />
         <entry key="..\:/Users/Gustavo/AndroidStudioProjects/CataloGame/app/src/main/res/layout/activity_splash.xml" value="0.22" />
         <entry key="..\:/Users/Gustavo/AndroidStudioProjects/CataloGame/app/src/main/res/layout/activity_usuario.xml" value="0.33" />

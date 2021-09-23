@@ -101,9 +101,7 @@ public class MainActivity extends AppCompatActivity  implements EnderecoAtual.On
                 }
             }
         };
-        //inicializa as preferências do usuário
         mPreferences = getSharedPreferences(PREFERENCIAS_NAME, MODE_PRIVATE);
-        //recupera as preferencias
         recuperar();
 
 
@@ -115,7 +113,7 @@ public class MainActivity extends AppCompatActivity  implements EnderecoAtual.On
         botaoSteam = findViewById(R.id.btnsteam);
         botaoXbox = findViewById(R.id.btnxbox);
         botaoPs = findViewById(R.id.btnps);
-        botaoUser = findViewById(R.id.btnuserhome);
+        botaoUser = findViewById(R.id.btnuserh);
         
         
         botaoCategorias.setOnClickListener(new View.OnClickListener() {
