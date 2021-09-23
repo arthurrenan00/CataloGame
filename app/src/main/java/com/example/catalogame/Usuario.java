@@ -46,6 +46,7 @@ public class Usuario extends AppCompatActivity implements EnderecoAtual.OnTaskCo
     ImageButton botaoCate;
     ImageButton botaoHome;
     ImageButton botaoLanca;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,6 +98,7 @@ public class Usuario extends AppCompatActivity implements EnderecoAtual.OnTaskCo
         botaoCate = findViewById(R.id.btnlancu);
         botaoLanca = findViewById(R.id.btnlancu);
         
+
         botaoHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -123,6 +125,37 @@ public class Usuario extends AppCompatActivity implements EnderecoAtual.OnTaskCo
             }
             
         });
+ 
+        
+        //ESSA FUNÇÃO IRÁ GRAVAR NA MEMÓRIA INTERNA
+        public void fGravarInterna(View View) {
+                Intent it = new Intent(this, Gravar.class);
+                it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.INTERNAL);
+                startActivity(it);
+        }
+            
+
+        //ESSA FUNÇÃO IRÁ LER NA MEMÓRIA INTERNA
+        public void fLerInterna(View View) {
+                Intent it = new Intent(this, Ler.class);
+                it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.INTERNAL);
+                startActivity(it);
+        }
+        
+        //ESSA FUNÇÃO IRÁ GRAVAR NA MEMÓRIA EXTERNA
+        public void fGravarExterna(View View) {
+                Intent it = new Intent(this, Gravar.class);
+                it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.EXTERNAL);
+                startActivity(it);
+        }
+        
+        //ESSA FUNÇÃO IRÁ LER NA MEMÓRIA EXTERNA
+        public void fLerExterna(View View) {
+                Intent it = new Intent(this, Ler.class);
+                it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.EXTERNAL);
+                startActivity(it);
+        }
+
     }
     
      private void startTrackingLocation() {
