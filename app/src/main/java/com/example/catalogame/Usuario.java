@@ -9,8 +9,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,6 +22,13 @@ import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Usuario extends AppCompatActivity implements EnderecoAtual.OnTaskCompleted {
 
@@ -46,7 +55,8 @@ public class Usuario extends AppCompatActivity implements EnderecoAtual.OnTaskCo
     ImageButton botaoCate;
     ImageButton botaoHome;
     ImageButton botaoLanca;
-    
+    private static final String Ficheiro = "favorito.txt";
+    private EditText editTexti;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,7 +107,9 @@ public class Usuario extends AppCompatActivity implements EnderecoAtual.OnTaskCo
         botaoHome = findViewById(R.id.btnhomeu);
         botaoCate = findViewById(R.id.btnlancu);
         botaoLanca = findViewById(R.id.btnlancu);
-        
+        editTexti = findViewById(R.id.edittexti);
+
+
 
         botaoHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,38 +141,64 @@ public class Usuario extends AppCompatActivity implements EnderecoAtual.OnTaskCo
 
     }
 
+    public void Salvar(View view) {
+        String texto = editTexti.getText().toString();
+        FileOutputStream fileOutputStream = null;
+        try {
+            fileOutputStream = openFileOutput(Ficheiro, MODE_PRIVATE);
 
+            fileOutputStream.write(texto.getBytes());
+            editTexti.getText().clear();
+            Toast.makeText(this, "Arquivo salvo em: " + getFilesDir(), Toast.LENGTH_SHORT).show();
 
-    //ESSA FUNÇÃO IRÁ GRAVAR NA MEMÓRIA INTERNA
-    public void fGravarInterna(View view) {
-        Intent it = new Intent(this, Gravar.class);
-        it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.INTERNAL);
-        startActivity(it);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        finally {
+            if (fileOutputStream!= null) {
+                try {
+                    fileOutputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+    }
+
+    public void Ler(View view) {
+        FileInputStream fileInputStream = null;
+        try {
+            fileInputStream = openFileInput(Ficheiro);
+            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
+            BufferedReader br = new BufferedReader(inputStreamReader);
+            StringBuilder sb = new StringBuilder();
+            String texto;
+            while((texto = br.readLine()) != null) {
+                sb.append(texto).append("\n");
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        finally {
+            if(fileInputStream != null) {
+                try {
+                    fileInputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
 
-    //ESSA FUNÇÃO IRÁ LER NA MEMÓRIA INTERNA
-    public void fLerInterna(View view) {
-        Intent it = new Intent(this, Ler.class);
-        it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.INTERNAL);
-        startActivity(it);
-    }
-
-    //ESSA FUNÇÃO IRÁ GRAVAR NA MEMÓRIA EXTERNA
-    public void fGravarExterna(View view) {
-        Intent it = new Intent(this, Gravar.class);
-        it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.EXTERNAL);
-        startActivity(it);
-    }
-
-    //ESSA FUNÇÃO IRÁ LER NA MEMÓRIA EXTERNA
-    public void fLerExterna(View view) {
-        Intent it = new Intent(this, Ler.class);
-        it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.EXTERNAL);
-        startActivity(it);
-    }
-    
-     private void startTrackingLocation() {
+    private void startTrackingLocation() {
         if (ActivityCompat.checkSelfPermission(this,
                 Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
