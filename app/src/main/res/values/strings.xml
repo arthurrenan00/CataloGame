@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">CataloGame</string>
     <string name="titPrincipal">CATALOGAME</string>
+    <string name="Titulodividido1">CATALO</string>
+    <string name="Titulodividido2">GAME</string>
     <string name="tithome">HOME</string>
     <string name="titLanc">LANÇAMENTOS</string>
     <string name="titCat">CATEGORIAS</string>
@@ -34,6 +36,7 @@
     <string name="terror">Terror</string>
     <string name="likes">0</string>
     <string name="localizacao">Localização</string>
+    <string name="txtlocalizacao">Clique no botão abaixo para ver sua localização</string>
 
     <string name="endereco">"Endereço: %1$s  \n Latitude: %2$s \n Longitude: %3$s \n Timestamp: %4$tr"</string>
     <string name="loading">Carregando</string>
