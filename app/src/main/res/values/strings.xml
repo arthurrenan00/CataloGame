@@ -38,6 +38,10 @@
     <string name="favs">Favoritos</string>
     <string name="user">PERFIL</string>
     <string name="descuser">Botão da tela usuários</string>
+    <string name="armazenamentoi">Armazenamento Interno</string>
+    <string name="armazenamentoe">Armazenamento Externo</string>
+    <string name="adicionar">ADICIONAR</string>
+    <string name="visualizar">VISUALIZAR</string>
 
     <string name="endereco">"Endereço: %1$s  \n Latitude: %2$s \n Longitude: %3$s \n Timestamp: %4$tr"</string>
     <string name="loading">Carregando</string>

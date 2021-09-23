@@ -15,6 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CataloGame">
         <activity
+            android:name=".Ler"
+            android:exported="true" />
+        <activity
+            android:name=".Gravar"
+            android:exported="true" />
+        <activity
             android:name=".Usuario"
             android:exported="true" />
         <activity
@@ -30,7 +36,7 @@
         <activity android:name=".Catfps" />
         <activity android:name=".CatTerror" />
         <activity android:name=".Bf2042" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".WebViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.WebViewActivity" />
