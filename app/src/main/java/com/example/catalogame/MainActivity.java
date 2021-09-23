@@ -4,12 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
+
+import android.os.Vibrator;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -61,11 +64,6 @@ public class MainActivity extends AppCompatActivity  implements EnderecoAtual.On
     ImageButton botaoSteam;
     ImageButton botaoXbox;
     ImageButton botaoPs;
-    SensorManager sensorManager;
-    Sensor sensor;
-    SensorEventListener sensorEventListener;
-    int mov = 0;
-    Vibrator vibrar
 
     
     @Override
@@ -73,42 +71,7 @@ public class MainActivity extends AppCompatActivity  implements EnderecoAtual.On
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide(); // remove a action bar
         setContentView(R.layout.activity_main);
-        //adicionando o sensor
-        sensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
-        sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-        if(sensor == null)
-            finish();
-        vibrar = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-        sensorEventListener = new SensorEventListener(){
-            @Override
-            public void onSensorChanged(SensorEvent sensorevent) {
-                float x = sensorevent.values[0];
-                float y = sensorevent.values[1];
-                float z = sensorevent.values[2];
-                System.out.println("Valor GiroX" + x);
-                if(x<-5 && whip == 0) {
-                    vibrar.vibrate(1000);
-                    whip++;
-                } else if(x>-5 && whip == 1) {
-                    vibrar.vibrate(500);
-                    whip++;
-                    
-                }
-                
-                if(whip == 2) {
-                    vibrar.vibrate(300);
-                    whip = 0;
-                }
-            }
-            
-            @Override
-            public void onAccuracyChanged(Sensor sensor, int accuracy) {
-            
-            }
-        
-        
-        };
-        Start();
+
         
         
         mLocationButton = (Button) findViewById(R.id.btnlocalizacao);
@@ -246,25 +209,7 @@ public class MainActivity extends AppCompatActivity  implements EnderecoAtual.On
             }
         });
     }
-    
-    //MÉTODOS DO ACELEROMETRO
-    private void Start() {
-        sensorManager.registerListener(sensorEventListener,sensor, SensorManager.SENSOR_DELAY_NORMAL);
-    }
-    
-    private void Stop() { sensorManager.unregisterListener(sensorEventListener); }
-    
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Stop();
-    }
-    
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Start();
-    }
+
                          
     
     //
