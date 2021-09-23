@@ -125,37 +125,39 @@ public class Usuario extends AppCompatActivity implements EnderecoAtual.OnTaskCo
             }
             
         });
- 
-        
-        //ESSA FUNÇÃO IRÁ GRAVAR NA MEMÓRIA INTERNA
-        public void fGravarInterna(View View) {
-                Intent it = new Intent(this, Gravar.class);
-                it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.INTERNAL);
-                startActivity(it);
-        }
-            
 
-        //ESSA FUNÇÃO IRÁ LER NA MEMÓRIA INTERNA
-        public void fLerInterna(View View) {
-                Intent it = new Intent(this, Ler.class);
-                it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.INTERNAL);
-                startActivity(it);
-        }
-        
-        //ESSA FUNÇÃO IRÁ GRAVAR NA MEMÓRIA EXTERNA
-        public void fGravarExterna(View View) {
-                Intent it = new Intent(this, Gravar.class);
-                it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.EXTERNAL);
-                startActivity(it);
-        }
-        
-        //ESSA FUNÇÃO IRÁ LER NA MEMÓRIA EXTERNA
-        public void fLerExterna(View View) {
-                Intent it = new Intent(this, Ler.class);
-                it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.EXTERNAL);
-                startActivity(it);
-        }
 
+    }
+
+
+
+    //ESSA FUNÇÃO IRÁ GRAVAR NA MEMÓRIA INTERNA
+    public void fGravarInterna(View view) {
+        Intent it = new Intent(this, Gravar.class);
+        it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.INTERNAL);
+        startActivity(it);
+    }
+
+
+    //ESSA FUNÇÃO IRÁ LER NA MEMÓRIA INTERNA
+    public void fLerInterna(View view) {
+        Intent it = new Intent(this, Ler.class);
+        it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.INTERNAL);
+        startActivity(it);
+    }
+
+    //ESSA FUNÇÃO IRÁ GRAVAR NA MEMÓRIA EXTERNA
+    public void fGravarExterna(View view) {
+        Intent it = new Intent(this, Gravar.class);
+        it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.EXTERNAL);
+        startActivity(it);
+    }
+
+    //ESSA FUNÇÃO IRÁ LER NA MEMÓRIA EXTERNA
+    public void fLerExterna(View view) {
+        Intent it = new Intent(this, Ler.class);
+        it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.EXTERNAL);
+        startActivity(it);
     }
     
      private void startTrackingLocation() {

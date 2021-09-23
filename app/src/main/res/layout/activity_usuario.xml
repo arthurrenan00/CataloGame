@@ -274,6 +274,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp"
+                android:onClick="fGravarInterna"
                 android:text="@string/adicionar"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtidinterno" />
@@ -284,6 +285,7 @@
                 android:layout_height="65dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
+                android:onClick="fLerInterna"
                 android:text="@string/visualizar"
                 app:layout_constraintBottom_toBottomOf="@+id/btngravari"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -296,6 +298,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp"
+                android:onClick="fGravarExterna"
                 android:text="@string/adicionar"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtidexterno" />
@@ -306,6 +309,7 @@
                 android:layout_height="65dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
+                android:onClick="fLerExterna"
                 android:text="@string/visualizar"
                 app:layout_constraintBottom_toBottomOf="@+id/btngravare"
                 app:layout_constraintEnd_toEndOf="parent"
