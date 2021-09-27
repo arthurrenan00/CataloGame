@@ -7,14 +7,171 @@
     android:background="#FFFFFF"
     tools:context=".Leitura">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar8"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:background="@color/orange_1"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txttituloh4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/titPrincipal"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btncatel"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="42dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/descCat"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/listamarc"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btnhomel"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/descHome"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/btnuserl"
+        app:layout_constraintStart_toEndOf="@+id/btncatel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homemarc"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btnlancal"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="45dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/descLanc"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/btnuserl"
+        app:layout_constraintStart_toEndOf="@+id/btncatel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rocketmarc" />
+
+    <TextView
+        android:id="@+id/txtcatu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/titCat"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btncatel"
+        app:layout_constraintStart_toStartOf="@+id/btncatel"
+        app:layout_constraintTop_toBottomOf="@+id/btncatel"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txthomeu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/tithome"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnhomel"
+        app:layout_constraintStart_toStartOf="@+id/btnhomel"
+        app:layout_constraintTop_toBottomOf="@+id/btnhomel"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtlancu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/titLanc"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnlancal"
+        app:layout_constraintStart_toStartOf="@+id/btnlancal"
+        app:layout_constraintTop_toBottomOf="@+id/btnlancal"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btnuserl"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/userbranco"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtuseru3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="@string/user"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnuserl"
+        app:layout_constraintStart_toStartOf="@+id/btnuserl"
+        app:layout_constraintTop_toBottomOf="@+id/btnuserl" />
+
     <TextView
         android:id="@+id/txtleitura"
-        android:layout_width="200dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="200dp"
+        android:fontFamily="@font/aldrich"
         android:text="TextView"
-        android:textColor="#000000"
+        android:textColor="@color/orange_1"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtidleitura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/FAVS"
+        android:textColor="@color/orange_1"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar8" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -55,6 +55,7 @@ public class Usuario extends AppCompatActivity implements EnderecoAtual.OnTaskCo
     ImageButton botaoCate;
     ImageButton botaoHome;
     ImageButton botaoLanca;
+
     private static final String Ficheiro = "favorito.txt";
     private EditText editTexti;
 
@@ -221,7 +222,7 @@ public class Usuario extends AppCompatActivity implements EnderecoAtual.OnTaskCo
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         switch (requestCode) {
             case REQUEST_LOCATION_PERMISSION:
-                // Permissão garantida
+
                 if (grantResults.length > 0
                         && grantResults[0]
                         == PackageManager.PERMISSION_GRANTED) {

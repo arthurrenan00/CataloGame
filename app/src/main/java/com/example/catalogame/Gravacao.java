@@ -2,12 +2,16 @@ package com.example.catalogame;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 import com.example.catalogame.Armazenamentos.Type;
 import java.io.File;
@@ -17,8 +21,10 @@ import java.io.PrintWriter;
 
 public class Gravacao extends AppCompatActivity {
 
+    private static final int EXTERNAL_STORAGE_PERMISSION_CODE = 30;
     private Type type;
     private EditText edTexto;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +36,10 @@ public class Gravacao extends AppCompatActivity {
         edTexto = (EditText) findViewById(R.id.edittextgravacao);
         type = (Type) getIntent().getSerializableExtra(Armazenamentos.STORAGE_TYPE);
 
+
     }
+
+
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public void SalvarTxt(View view) {
@@ -72,6 +81,10 @@ public class Gravacao extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     private String salvarExterno(String text) throws IOException {
+
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                EXTERNAL_STORAGE_PERMISSION_CODE);
+
         String status = Environment.getExternalStorageState();
 
         if( !status.equals(Environment.MEDIA_MOUNTED)){

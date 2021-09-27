@@ -3,9 +3,12 @@ package com.example.catalogame;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,10 +19,12 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Scanner;
 
+
 public class Leitura extends AppCompatActivity {
 
     private TextView txtTexto;
     private Type type;
+
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
@@ -27,6 +32,7 @@ public class Leitura extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leitura);
         getSupportActionBar().hide();
+
 
 
         txtTexto = (TextView) findViewById(R.id.txtleitura);

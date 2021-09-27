@@ -7,11 +7,153 @@
     android:background="#FFFFFF"
     tools:context=".Gravacao">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:background="@color/orange_1"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txttituloh2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/titPrincipal"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btncateg"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="42dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/descCat"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/listamarc"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btnhomeu2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/descHome"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/btnuserg"
+        app:layout_constraintStart_toEndOf="@+id/btncateg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homemarc"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btnlancu2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="45dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/descLanc"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/btnuserg"
+        app:layout_constraintStart_toEndOf="@+id/btncateg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rocketmarc" />
+
+    <TextView
+        android:id="@+id/txtcatu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/titCat"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btncateg"
+        app:layout_constraintStart_toStartOf="@+id/btncateg"
+        app:layout_constraintTop_toBottomOf="@+id/btncateg"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txthomeu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/tithome"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnhomeu2"
+        app:layout_constraintStart_toStartOf="@+id/btnhomeu2"
+        app:layout_constraintTop_toBottomOf="@+id/btnhomeu2"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtlancag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/titLanc"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnlancu2"
+        app:layout_constraintStart_toStartOf="@+id/btnlancu2"
+        app:layout_constraintTop_toBottomOf="@+id/btnlancu2"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btnuserg"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/userbranco"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtuserg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="@string/user"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnuserg"
+        app:layout_constraintStart_toStartOf="@+id/btnuserg"
+        app:layout_constraintTop_toBottomOf="@+id/btnuserg" />
+
     <EditText
         android:id="@+id/edittextgravacao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="@string/nomedojogo"
         android:inputType="textPersonName"
@@ -19,7 +161,7 @@
         android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtidgrav"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
@@ -28,9 +170,23 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:onClick="SalvarTxt"
-        android:text="Button"
+        android:text="@string/salvar"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/edittextgravacao"
         app:layout_constraintStart_toStartOf="@+id/edittextgravacao"
         app:layout_constraintTop_toBottomOf="@+id/edittextgravacao" />
+
+    <TextView
+        android:id="@+id/txtidgrav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/adicionar"
+        android:textColor="@color/orange_1"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar6" />
 </androidx.constraintlayout.widget.ConstraintLayout>
