@@ -66,16 +66,15 @@ public class Usuario extends AppCompatActivity implements EnderecoAtual.OnTaskCo
         
         mLocationButton = (Button) findViewById(R.id.btnlocalizacao);
         mLocationTextView = (TextView) findViewById(R.id.txtlocalizacao);
-        // Inicializando o FusedLocationClient.
+
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(
                 this);
-        // Recuperando o estado da aplicação quando é recriado
+
         if (savedInstanceState != null) {
             mTrackingLocation = savedInstanceState.getBoolean(
                     TRACKING_LOCATION_KEY);
         }
 
-        // onclickListener do botão
         mLocationButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -88,7 +87,6 @@ public class Usuario extends AppCompatActivity implements EnderecoAtual.OnTaskCo
             }
         });
 
-        // Inicializando os callbacks da locations.
         mLocationCallback = new LocationCallback() {
 
             @Override
@@ -107,7 +105,6 @@ public class Usuario extends AppCompatActivity implements EnderecoAtual.OnTaskCo
         botaoHome = findViewById(R.id.btnhomeu);
         botaoCate = findViewById(R.id.btncatu);
         botaoLanca = findViewById(R.id.btnlancu);
-        editTexti = findViewById(R.id.edittexti);
 
 
 
@@ -141,60 +138,34 @@ public class Usuario extends AppCompatActivity implements EnderecoAtual.OnTaskCo
 
     }
 
-    public void Salvar(View view) {
-        String texto = editTexti.getText().toString();
-        FileOutputStream fileOutputStream = null;
-        try {
-            fileOutputStream = openFileOutput(Ficheiro, MODE_PRIVATE);
 
-            fileOutputStream.write(texto.getBytes());
-            editTexti.getText().clear();
-            Toast.makeText(this, "Arquivo salvo em: " + getFilesDir(), Toast.LENGTH_LONG).show();
+    public void GravarI(View view) {
+        Intent it = new Intent(this, Gravacao.class);
+        it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.INTERNAL);
+        startActivity(it);
+    }
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        finally {
-            if (fileOutputStream!= null) {
-                try {
-                    fileOutputStream.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
+    public void LerI(View view) {
+        Intent it = new Intent(this, Leitura.class);
+        it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.INTERNAL);
+        startActivity(it);
 
     }
 
-    public void Ler(View view) {
-        FileInputStream fileInputStream = null;
-        try {
-            fileInputStream = openFileInput(Ficheiro);
-            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
-            BufferedReader br = new BufferedReader(inputStreamReader);
-            StringBuilder sb = new StringBuilder();
-            String texto;
-            while((texto = br.readLine()) != null) {
-                sb.append(texto).append("\n");
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
-        finally {
-            if(fileInputStream != null) {
-                try {
-                    fileInputStream.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
+    public void GravarE(View view) {
+        Intent it = new Intent(this, Gravacao.class);
+        it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.EXTERNAL);
+        startActivity(it);
+
+    }
+
+
+    public void LerE(View view) {
+        Intent it = new Intent(this, Leitura.class);
+        it.putExtra(Armazenamentos.STORAGE_TYPE, Armazenamentos.Type.EXTERNAL);
+        startActivity(it);
+
     }
 
 

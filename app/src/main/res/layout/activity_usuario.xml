@@ -272,12 +272,12 @@
                 android:layout_height="65dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="15dp"
-                android:onClick="Salvar"
+                android:layout_marginTop="20dp"
+                android:onClick="GravarI"
                 android:text="@string/adicionar"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edittexti" />
+                app:layout_constraintTop_toBottomOf="@+id/txtidinterno" />
 
             <Button
                 android:id="@+id/btnleri"
@@ -285,7 +285,7 @@
                 android:layout_height="65dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
-                android:onClick="Ler"
+                android:onClick="LerI"
                 android:text="@string/visualizar"
                 android:textColor="#FFFFFF"
                 android:textColorHint="@color/orange_1"
@@ -299,11 +299,12 @@
                 android:layout_height="65dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="20dp"
+                android:onClick="GravarE"
                 android:text="@string/adicionar"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edittexte" />
+                app:layout_constraintTop_toBottomOf="@+id/txtidexterno" />
 
             <Button
                 android:id="@+id/btnlere"
@@ -311,41 +312,12 @@
                 android:layout_height="65dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
+                android:onClick="LerE"
                 android:text="@string/visualizar"
                 android:textColor="#FFFFFF"
                 app:layout_constraintBottom_toBottomOf="@+id/btngravare"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/btngravare" />
-
-            <EditText
-                android:id="@+id/edittexti"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:ems="10"
-                android:hint="@string/nomedojogo"
-                android:inputType="textPersonName"
-                android:textColor="@color/orange_1"
-                android:textColorHint="#575757"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtidinterno" />
-
-            <EditText
-                android:id="@+id/edittexte"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:ems="10"
-                android:hint="@string/nomedojogo"
-                android:inputType="textPersonName"
-                android:textColor="@color/orange_1"
-                android:textColorHint="#575757"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtidexterno" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
