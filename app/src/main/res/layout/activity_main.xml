@@ -289,6 +289,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="341dp"
+                android:layout_height="269dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnxbox"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtdestrevil"
+                app:srcCompat="@drawable/sonicfeio" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

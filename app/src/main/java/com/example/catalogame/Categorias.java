@@ -59,16 +59,16 @@ public class Categorias extends AppCompatActivity {
             
         });
         
-        botaofps.setOnClickListener(new View.OnClickListener() {
+        /*botaofps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent telfps = new Intent(getApplicationContext(), Catfps.class);
                 startActivity(telfps);
             }
-            
+
         });
-        
+
         botaosandbox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,6 +77,6 @@ public class Categorias extends AppCompatActivity {
                 startActivity(telsb);
             }
             
-        });
+        }); */
     }
 }
